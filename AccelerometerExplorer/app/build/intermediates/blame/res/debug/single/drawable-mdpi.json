@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\phone_2.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\phone_2.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\phone_4.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\phone_4.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\phone_1.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\phone_1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\launcher_icon.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\launcher_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\phone_3.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\phone_3.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ke_icon.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\ke_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\phone.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\phone.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\acceleration_icon.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\acceleration_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\color_bar.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\color_bar.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\phone_0.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-mdpi\\phone_0.png"
+    }
+]

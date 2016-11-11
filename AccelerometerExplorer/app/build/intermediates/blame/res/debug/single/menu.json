@@ -1,26 +1,26 @@
 [
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/menu/menu_home.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/menu/menu_home.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_vector.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\menu\\menu_vector.xml"
     },
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/menu/menu_logger.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/menu/menu_logger.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_gauges.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\menu\\menu_gauges.xml"
     },
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/menu/menu_vector.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/menu/menu_vector.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_home.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\menu\\menu_home.xml"
     },
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/menu/menu_noise.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/menu/menu_noise.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_noise.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\menu\\menu_noise.xml"
     },
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/menu/menu_gauges.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/menu/menu_gauges.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_diagnostic.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\menu\\menu_diagnostic.xml"
     },
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/menu/menu_diagnostic.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/menu/menu_diagnostic.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_logger.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\menu\\menu_logger.xml"
     }
 ]

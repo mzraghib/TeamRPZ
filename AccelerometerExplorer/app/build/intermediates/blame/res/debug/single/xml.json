@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/xml/preference_filter.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/xml/preference_filter.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference_noise_filter.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\xml\\preference_noise_filter.xml"
     },
     {
-        "merged": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/res/merged/debug/xml/preference_noise_filter.xml",
-        "source": "/Users/kaleb/StudioProjects/AccelerationExplorer/app/src/main/res/xml/preference_noise_filter.xml"
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference_filter.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\xml\\preference_filter.xml"
     }
 ]
