@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="13464803375953"
+    token="-411948792811712299"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="517" />
+    <task
+        name="instant-run-dex"
+        duration="524" />
+    <task
+        name="instant-run-transform"
+        duration="19" />
+    <task
+        name="verifier"
+        duration="9" />
+
+    <artifact
+        location="/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build timestamp="13261576476602" >
+        <artifact
+            location="/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="13464803375953"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>
