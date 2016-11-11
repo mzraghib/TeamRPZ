@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-
-public class MeanFilterActivity
-{
-    private static final String tag = MeanFilterActivity.class.getSimpleName();
+public class MeanFilterSmoothing{
+    private static final String tag = MeanFilterSmoothing.class.getSimpleName();
 
     private float timeConstant = 1;
     private float startTime = 0;

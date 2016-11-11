@@ -1,6 +1,8 @@
 package com.rshah.accelerometer;
 
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.hardware.Sensor;
@@ -14,8 +16,15 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
+
+    protected volatile float[] acceleration = new float[3];
+    protected MeanFilterSmoothing meanFilterAccelSmoothing;
     private TextView xText, yText, zText;
     private Sensor mySensor;
     private SensorManager SM;
@@ -28,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        meanFilterAccelSmoothing = new MeanFilterSmoothing();
+
         setContentView(R.layout.activity_main);
 
         // Create Sensor Manager
@@ -37,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mySensor = SM.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
         //Register Sensor Listener
-        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_GAME);
+        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
 
         //Assign TextView
         xText = (TextView) findViewById(R.id.xText);
@@ -48,9 +60,18 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        xText.setText("X: " + event.values[0]);
-        yText.setText("Y: " + event.values[1]);
-        zText.setText("Z: " + event.values[2]);
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            System.arraycopy(event.values, 0, acceleration, 0,
+                    event.values.length);
+
+            acceleration = meanFilterAccelSmoothing
+                    .addSamples(acceleration);
+        }
+
+
+        xText.setText("X: " + String.format("%.2f", acceleration[0]));
+        yText.setText("Y: " + String.format("%.2f", acceleration[1]));
+        zText.setText("Z: " + String.format("%.2f", acceleration[2]));
     }
 
     @Override
@@ -58,3 +79,4 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         //Not in use
     }
 }
+
