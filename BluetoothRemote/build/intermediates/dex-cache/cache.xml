@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0cfffb8f8913d3214fd54541da4f1b427eb76e73">
+        <dex dex="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0d73374c92a249c3b5737a9d2aff1f28d0c637c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="48a03f024324f91c990f9332646f53f589041bf7">
+        <dex dex="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_48fe5a467de2774d5657206d3a6e37735a2acefc\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_photo.png",
+        "source": "D:\\AndroidStudioProjects\\BluetoothRemote\\app\\src\\main\\res\\drawable\\ic_action_photo.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_refresh.png",
+        "source": "D:\\AndroidStudioProjects\\BluetoothRemote\\app\\src\\main\\res\\drawable\\ic_action_refresh.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_icon.png",
+        "source": "D:\\AndroidStudioProjects\\BluetoothRemote\\app\\src\\main\\res\\drawable\\app_icon.png"
+    }
+]

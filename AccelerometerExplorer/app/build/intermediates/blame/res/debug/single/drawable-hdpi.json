@@ -16,8 +16,16 @@
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\ke_icon.png"
     },
     {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\launcher_icon.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\launcher_icon.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\start_button_background.png",
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\start_button_background.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\reset_button_background.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\reset_button_background.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_4.png",
@@ -26,6 +34,62 @@
     {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_logger.png",
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\icon_logger.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_noise.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\button_noise.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_2.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\phone_2.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_acceleration.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\icon_acceleration.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_noise.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\button_noise.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_2.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone_2.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_0.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\phone_0.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_3.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone_3.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_1.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\phone_1.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_logger.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\icon_logger.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_4.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\phone_4.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\phone.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_acceleration.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\icon_acceleration.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_gauges.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\button_gauges.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_gauges.png",
@@ -40,39 +104,51 @@
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\button_vector.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_noise.png",
-        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\button_noise.png"
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_logger.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\button_logger.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\color_bar.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\color_bar.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\color_bar.png",
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\color_bar.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_acceleration.png",
-        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\icon_acceleration.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone.png",
-        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone.png"
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ke_icon.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\ke_icon.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_logger.png",
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\button_logger.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_2.png",
-        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone_2.png"
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_3.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\phone_3.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\reset_button_background.png",
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\reset_button_background.png"
     },
     {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\start_button_background.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\start_button_background.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\stop_button_background.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\stop_button_background.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_diagnostic.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\button_diagnostic.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_1.png",
         "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone_1.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\phone_3.png",
-        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-hdpi\\phone_3.png"
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\button_vector.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-hdpi\\button_vector.png"
     }
 ]
