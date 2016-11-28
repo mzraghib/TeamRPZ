@@ -98,7 +98,7 @@ public class BluetoothRemote extends Activity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getPointerCount() == 1)
-                    mCommandService.handleTouch(event);
+                    mCommandService.handleTouch(event); // Added 11/26 - Accelerometer values intergrated to only the one touch method
                 else if(event.getPointerCount() == 2){
                     mCommandService.handleMultiTouch(event);
                 }

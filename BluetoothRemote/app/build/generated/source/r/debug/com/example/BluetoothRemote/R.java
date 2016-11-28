@@ -20,13 +20,13 @@ public final class R {
         public static final int bookmarks=0x7f070000;
         public static final int deleteButton=0x7f070008;
         public static final int discoverable=0x7f07000b;
-        public static final int enterButton=0x7f070007;
+        public static final int enterButton=0x7f070006;
         public static final int new_tab=0x7f07000c;
         public static final int open_bookmark=0x7f07000e;
         public static final int reconnect=0x7f070009;
         public static final int rlayout=0x7f070003;
         public static final int scan_qr_code=0x7f07000a;
-        public static final int textBox=0x7f070006;
+        public static final int textBox=0x7f070007;
         public static final int title_left_text=0x7f070001;
         public static final int title_right_text=0x7f070002;
         public static final int tv1=0x7f070004;

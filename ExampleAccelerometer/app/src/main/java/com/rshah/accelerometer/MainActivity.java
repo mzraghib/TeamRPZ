@@ -10,10 +10,6 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.text.SimpleDateFormat;
-
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
 
@@ -61,24 +57,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             acceleration = meanFilterAccelSmoothing
                     .addSamples(acceleration);
         }
-        String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
-        String fileName = "AnalysisData.csv";
-        String filePath = baseDir + File.separator + fileName;
-        File f = new File(filePath );
-        CSVWriter writer;
-// File exist
-        if(f.exists() && !f.isDirectory()){
-            mFileWriter = new FileWriter(filePath , true);
-            writer = new CSVWriter(mFileWriter);
-        }
-        else {
-            writer = new CSVWriter(new FileWriter(filePath));
-        }
-        String[] data = {"Ship Name","Scientist Name", "...",new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").formatter.format(date)});
 
-        writer.writeNext(data);
-
-        writer.close();
 
         xText.setText("X: " + String.format("%.2f", acceleration[0]));
         yText.setText("Y: " + String.format("%.2f", acceleration[1]));

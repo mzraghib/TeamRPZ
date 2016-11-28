@@ -1,10 +1,15 @@
 
 package com.example.BluetoothRemote;
 
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -24,7 +29,7 @@ import java.util.UUID;
  * incoming connections, a thread for connecting with a device, and a
  * thread for performing data transmissions when connected.
  */
-public class BluetoothCommandService {
+public class BluetoothCommandService extends Activity implements SensorEventListener{
 
     // Parameters
     private long timeLastSend = System.currentTimeMillis() / 10;
@@ -62,17 +67,28 @@ public class BluetoothCommandService {
     public static final int STATE_CONNECTING = 2; // now initiating an outgoing connection
     public static final int STATE_CONNECTED = 3;  // now connected to a remote device
 
+    private Sensor mySensor;
+    private SensorManager SM;
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        SM = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mySensor = SM.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
     /**
      * Constructor. Prepares a new BluetoothRemote session.
      * @param context  The UI Activity Context
      * @param handler  A Handler to send messages back to the UI Activity
      */
+
+
     public BluetoothCommandService(Context context, Handler handler) {
         mAdapter = BluetoothAdapter.getDefaultAdapter();
         mState = STATE_NONE;
         mHandler = handler;
         mSocket = null;
     }
+
 
     /**
      * Set the current state of the command connection
@@ -254,6 +270,22 @@ public class BluetoothCommandService {
 
         // Start the service over to restart listening mode
         BluetoothCommandService.this.start();
+    }
+
+    public float X;
+    public float Y;
+    public float Z;
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+
+        X = event.values[0];
+        Y = event.values[1];
+        Z = event.values[2];
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
     }
 
 
@@ -448,39 +480,47 @@ public class BluetoothCommandService {
         write(buffer);
     }
 
+
     public void handleTouch(MotionEvent m) {
-        if(m.getActionMasked() == MotionEvent.ACTION_DOWN){ // for recognizing a tap rather than a move
-            downXPosition = (int) m.getX();
-            downYPosition = (int) m.getY();
-        }
 
-        else if(m.getActionMasked() == MotionEvent.ACTION_UP){ // for recognizing a tap rather than a move
-            upXPosition = (int) m.getX();
-            upYPosition = (int) m.getY();
+//        if(m.getActionMasked() == MotionEvent.ACTION_DOWN){ // for recognizing a tap rather than a move
+//
+//                downXPosition = (int) X;
+//                downYPosition = (int) Y;
+//            }
+//
+//            else if(m.getActionMasked() == MotionEvent.ACTION_UP){ // for recognizing a tap rather than a move
+//                upXPosition = (int) X;
+//                upYPosition = (int) Y;
 
-            int dx = Math.abs(upXPosition - downXPosition);
-            int dy = Math.abs(upYPosition - downYPosition);
-            if(dx <= 5 && dy <= 5){
-                handleLeftClick();
-            }
-        }
+//            int dx = Math.abs(upXPosition - downXPosition);
+//            int dy = Math.abs(upYPosition - downYPosition);
+//            if(dx <= 5 && dy <= 5){
+//                handleLeftClick();
+//            }
+            int dx = (int) X;
+            int dy = (int) Y;
+//            if(dx <= 5 && dy <= 5){
+//                handleLeftClick();
+//            }
+
 
 
             if((System.currentTimeMillis() / 10 - timeLastSend) > 2){ // lower amount of packets sent
-                int x = (int) m.getX();
-                int y = (int) m.getY();
-                if(x != 0 || y != 0){
-                    int action = m.getActionMasked();
-                    if(action != MotionEvent.ACTION_MOVE){
-                        mPreviousX = x;
-                        mPreviousY = y;
-                    }
+                int x = (int) X;
+                int y = (int) Y;
+//                if(x != 0 || y != 0){
+//                    int action = m.getActionMasked();
+//                    if(action != MotionEvent.ACTION_MOVE){
+//                        mPreviousX = x;
+//                        mPreviousY = y;
+//                    }
 
                     RemoteCommand rcm = new RemoteCommand();
                     byte[] buffer;
 
-                    int dx = x - mPreviousX;
-                    int dy = y - mPreviousY;
+//                    int dx = x - mPreviousX;
+//                    int dy = y - mPreviousY;
 
                     rcm.command = RemoteValues.MOVE_MOUSE_BY;
 
@@ -501,7 +541,8 @@ public class BluetoothCommandService {
                     mPreviousY = y;
                 }
             }
-        }
+
+
 
     public void handleMultiTouch(MotionEvent m) {
         if(m.getActionMasked() == MotionEvent.ACTION_POINTER_DOWN){ // for recognizing a tap rather than a move
