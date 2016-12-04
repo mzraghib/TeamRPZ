@@ -2,22 +2,24 @@ package com.example.haris.testapp;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.os.Environment;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.Thing;
+
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Set;
-
-
-//package com.example.haris.testapp;
-
+import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -27,15 +29,31 @@ public class MainActivity extends Activity {
     public int numbytes = 0;
 
 
+    private static final int DISCOVER_DURATION = 300;
+    private static final int REQUEST_BLU = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    public void sendViaBluetooth(View v) {
 
-        //mLinearLayoutMain = (LinearLayout) findViewById(R.id.layout_main);
-        //mLinearLayoutMain.setOnTouchListener(this);
-        //TextView txtview;
+        BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
 
+        if(btAdapter == null) {
+            Toast.makeText(this, "Bluetooth is not supported on this device", Toast.LENGTH_LONG).show();
+        } else {
+            enableBluetooth();
+        }
+    }
+    public void enableBluetooth() {
+
+        Intent discoveryIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
+
+        discoveryIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, DISCOVER_DURATION);
+
+        startActivityForResult(discoveryIntent, REQUEST_BLU);
     }
 
     @Override
@@ -66,60 +84,63 @@ public class MainActivity extends Activity {
         }
         return true;
     }
-    private void init() throws IOException {
-        BluetoothAdapter blueAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (blueAdapter != null) {
-            if (blueAdapter.isEnabled()) {
-                Set<BluetoothDevice> bondedDevices = blueAdapter.getBondedDevices();
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-//                if(bondedDevices.size() > 0) {
-//                    Object[] devices = (Object []) bondedDevices.toArray();
-//                    BluetoothDevice device = (BluetoothDevice) devices[position];
-//                    ParcelUuid[] uuids = device.getUuids();
-//                    BluetoothSocket socket = device.createRfcommSocketToServiceRecord(uuids[0].getUuid());
-//                    socket.connect();
-//                    outputStream = socket.getOutputStream();
-//                    inStream = socket.getInputStream();
-//                }
+        if(resultCode == DISCOVER_DURATION && requestCode == REQUEST_BLU) {
 
-                Log.e("error", "No appropriate paired devices.");
-            } else {
-                Log.e("error", "Bluetooth is disabled.");
-            }
-        }
-    }
-    public class MyActivity extends Activity {
-        protected void onCreate(Bundle icicle) {
-            super.onCreate(icicle);
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            File f = new File(Environment.getExternalStorageDirectory(), "md5sum.txt");
+            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(f));
 
-            setContentView(R.layout.content_layout_id);
+            PackageManager pm = getPackageManager();
+            List<ResolveInfo> appsList = pm.queryIntentActivities(intent, 0);
 
-            final Button button = (Button) findViewById(R.id.button_id);
-            button.setOnClickListener(new View.OnClickListener() {
-                public void write(byte[] X) throws IOException  {
-                    while (true) {
-                        outputStream.write(X);
+            if(appsList.size() > 0) {
+                String packageName = null;
+                String className = null;
+                boolean found = false;
+
+                for(ResolveInfo info : appsList) {
+                    packageName = info.activityInfo.packageName;
+                    if(packageName.equals("com.android.bluetooth")) {
+                        className = info.activityInfo.name;
+                        found = true;
+                        break;
                     }
                 }
 
-            });
-        }
-    }
-
-
-
-    public void run() {
-        final int BUFFER_SIZE = 1024;
-        byte[] buffer = new byte[BUFFER_SIZE];
-        int bytes = 0;
-        int b = BUFFER_SIZE;
-
-        while (true) {
-            try {
-                bytes = inStream.read(buffer, bytes, BUFFER_SIZE - bytes);
-            } catch (IOException e) {
-                e.printStackTrace();
+                if (!found) {
+                    Toast.makeText(this, "Bluetooth havn't been found",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    intent.setClassName(packageName, className);
+                    startActivity(intent);
+                }
             }
+        } else {
+            Toast.makeText(this, "Bluetooth is cancelled", Toast.LENGTH_LONG)
+                    .show();
         }
     }
-}
+
+    public void write(String s) throws IOException {
+            outputStream.write(s.getBytes());
+        }
+
+        public Action getIndexApiAction() {
+            Thing object = new Thing.Builder()
+                    .setName("My Page") // TODO: Define a title for the content shown.
+                    // TODO: Make sure this auto-generated URL is correct.
+                    .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
+                    .build();
+            return new Action.Builder(Action.TYPE_VIEW)
+                    .setObject(object)
+                    .setActionStatus(Action.STATUS_TYPE_COMPLETED)
+                    .build();
+        }
+
+
+    }
