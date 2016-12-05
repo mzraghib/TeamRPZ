@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference_filter.xml",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\xml\\preference_filter.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference_noise_filter.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\xml\\preference_noise_filter.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference_filter.xml",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\xml\\preference_filter.xml"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference_noise_filter.xml",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\xml\\preference_noise_filter.xml"
+    }
+]

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        layout="@layout/layout_diagnostic_output_axis" 
+        android:id="@+id/layout_x_axis" 
+        android:layout_gravity="center"/>
+    
+    <include 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        layout="@layout/layout_diagnostic_output_axis" 
+        android:id="@+id/layout_y_axis"
+        android:layout_gravity="center"/>
+    
+    <include 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        layout="@layout/layout_diagnostic_output_axis" 
+        android:id="@+id/layout_z_axis"
+        android:layout_gravity="center"/>
+    
+
+</LinearLayout>

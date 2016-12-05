@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\launcher_icon.png",
+        "source": "D:\\AndroidStudioProjects\\AccelerationExplorer-master\\app\\src\\main\\res\\drawable-ldpi\\launcher_icon.png"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\launcher_icon.png",
+        "source": "D:\\TeamRPZ\\AccelerometerExplorer\\app\\src\\main\\res\\drawable-ldpi\\launcher_icon.png"
+    }
+]
