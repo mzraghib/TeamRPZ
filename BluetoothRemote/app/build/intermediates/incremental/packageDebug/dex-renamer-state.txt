@@ -1,4 +1,4 @@
-#Sun Nov 27 19:44:19 EST 2016
+#Mon Dec 05 16:49:46 EST 2016
 base.0=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_48fe5a467de2774d5657206d3a6e37735a2acefc
 renamed.1=classes2.dex
 renamed.0=classes.dex

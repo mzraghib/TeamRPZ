@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="e0af1df988b67377db83c6de077f9a287db4d0ba">
+        sha1="8cccd1a14f0878bd9693ff01e61993b18f622679">
         <dex dex="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0d73374c92a249c3b5737a9d2aff1f28d0c637c9\classes.dex" />
     </item>
     <item
@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="28279fd2364e2049a0e774649b44ad090367f93c">
+        sha1="fff29667a8dfacd0f0b81df448eee25dab495e8d">
         <dex dex="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_48fe5a467de2774d5657206d3a6e37735a2acefc\classes.dex" />
     </item>
 

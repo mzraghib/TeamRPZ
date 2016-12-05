@@ -6,13 +6,16 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -27,6 +30,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.RemoteCommand;
+import com.example.RemoteValues;
 import com.example.android.IntentIntegrator;
 import com.example.android.IntentResult;
 
@@ -37,12 +42,17 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * This is the main Activity that displays the current command session.
  */
-public class BluetoothRemote extends Activity {
+public class BluetoothRemote extends Activity implements SensorEventListener {
     // Debugging
     private static final String TAG = "BluetoothRemote";
     private static final boolean D = false;
@@ -83,6 +93,39 @@ public class BluetoothRemote extends Activity {
 
     // File to save bookmarks to
     private String filename = "bookmarks.txt";
+    private Sensor mySensor;
+    private SensorManager SM;
+    public int dx;
+    public int dy;
+    private int mPreviousX;
+    private int mPreviousY;
+    public float parameter1 = 0;
+    public float parameter2 = 0;
+    //public byte[] buffer;
+    //private static final long serialVersionUID = 5172852401L;
+    protected volatile float[] acceleration = new float[3];
+    protected volatile float[] abc = new float[3];
+
+    protected MeanFilterSmoothing meanFilterAccelSmoothing;
+
+    // Unique UUID for this application
+    private static final UUID MY_UUID_SECURE =
+            UUID.fromString("002b8631-0000-1000-8000-00805f9b34fb");
+
+    // Member fields
+    private BluetoothAdapter mAdapter;
+    private ConnectThread mConnectThread;
+    private ConnectedThread mConnectedThread;
+    private int mState;
+    private BluetoothSocket mSocket;
+    private OutputStream mOutStream;
+
+
+    // Constants that indicate the current connection state
+    public static final int STATE_NONE = 0;       // we're doing nothing
+    public static final int STATE_LISTEN = 1;     // now listening for incoming connections
+    public static final int STATE_CONNECTING = 2; // now initiating an outgoing connection
+    public static final int STATE_CONNECTED = 3;  // now connected to a remote device
 
 
     @Override
@@ -136,6 +179,13 @@ public class BluetoothRemote extends Activity {
             }
         });
 
+        meanFilterAccelSmoothing = new MeanFilterSmoothing();
+        SM = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mySensor = SM.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mAdapter = BluetoothAdapter.getDefaultAdapter();
+        mState = STATE_NONE;
+//        mHandler = handler;
+        mSocket = null;
         // Get local Bluetooth adapter
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -171,35 +221,558 @@ public class BluetoothRemote extends Activity {
         }
     }
 
+
+
+    /**
+     * Set the current state of the command connection
+     * @param state  An integer defining the current connection state
+     */
+    private synchronized void setState(int state) {
+        if (D) Log.d(TAG, "setState() " + mState + " -> " + state);
+        mState = state;
+
+        // Give the new state to the Handler so the UI Activity can update
+//        mHandler.obtainMessage(BluetoothRemote.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
+    }
+
+    /**
+     * Return the current connection state. */
+    public synchronized int getState() {
+        return mState;
+    }
+
+    /**
+     * Start the command service. Specifically start AcceptThread to begin a
+     * session in listening (server) mode. Called by the Activity onResume() */
+    public synchronized void start() {
+        if (D) Log.d(TAG, "start");
+
+        mSocket = null;
+
+        // Cancel any thread attempting to make a connection
+        if (mConnectThread != null) {
+            mConnectThread.cancel();
+            mConnectThread = null;
+        }
+
+        // Cancel any thread currently running a connection
+        if (mConnectedThread != null) {
+            mConnectedThread.cancel();
+            mConnectedThread = null;
+        }
+
+        setState(STATE_LISTEN);
+    }
+
+    /**
+     * Start the ConnectThread to initiate a connection to a remote device.
+     * @param device  The BluetoothDevice to connect
+     */
+    public synchronized void connect(BluetoothDevice device) {
+        if (D) Log.d(TAG, "connect to: " + device);
+
+        mSocket = null;
+
+        // Cancel any thread attempting to make a connection
+        if (mState == STATE_CONNECTING) {
+            if (mConnectThread != null) {
+                mConnectThread.cancel();
+                mConnectThread = null;
+            }
+        }
+
+        // Cancel any thread currently running a connection
+        if (mConnectedThread != null) {
+            mConnectedThread.cancel();
+            mConnectedThread = null;
+        }
+
+        // Start the thread to connect with the given device
+        mConnectThread = new ConnectThread(device);
+        mConnectThread.start();
+        setState(STATE_CONNECTING);
+    }
+
+    /**
+     * Start the ConnectedThread to begin managing a Bluetooth connection
+     * @param socket  The BluetoothSocket on which the connection was made
+     * @param device  The BluetoothDevice that has been connected
+     */
+    public synchronized void connected(BluetoothSocket socket, BluetoothDevice
+            device, final String socketType) {
+        if (D) Log.d(TAG, "connected, Socket Type:" + socketType);
+
+        // Cancel the thread that completed the connection
+        if (mConnectThread != null) {
+            mConnectThread.cancel();
+            mConnectThread = null;
+        }
+
+        // Cancel any thread currently running a connection
+        if (mConnectedThread != null) {
+            mConnectedThread.cancel();
+            mConnectedThread = null;
+        }
+
+        // Start the thread to manage the connection and perform transmissions
+        mConnectedThread = new ConnectedThread(socket, socketType);
+        mConnectedThread.start();
+
+        // Send the name of the connected device back to the UI Activity
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_DEVICE_NAME);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.DEVICE_NAME, device.getName());
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+//
+//        // Send the address of the connected device back to the UI Activity
+//        msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_DEVICE_ADDRESS);
+//        bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.DEVICE_ADDRESS, device.getAddress());
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+
+        setState(STATE_CONNECTED);
+    }
+
+    /**
+     * Stop all threads
+     */
+    public synchronized void stop() {
+        if (D) Log.d(TAG, "stop");
+
+        if (mConnectThread != null) {
+            mConnectThread.cancel();
+            mConnectThread = null;
+        }
+
+        if (mConnectedThread != null) {
+            mConnectedThread.cancel();
+            mConnectedThread = null;
+        }
+
+        setState(STATE_NONE);
+    }
+
+    /**
+     * Write to the ConnectedThread in an unsynchronized manner
+     * @param out The bytes to write
+     * @see ConnectedThread#write(byte[])
+     */
+    public void write(byte[] out) {
+        // Create temporary object
+        ConnectedThread r;
+        // Synchronize a copy of the ConnectedThread
+        synchronized (this) {
+            if (mState != STATE_CONNECTED) return;
+            r = mConnectedThread;
+        }
+        // Perform the write unsynchronized
+        r.write(out);
+    }
+
+    /**
+     * Indicate that the connection attempt failed and notify the UI Activity.
+     */
+    private void connectionFailed() {
+        // Send a failure message back to the Activity
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.TOAST, "Unable to connect device");
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+
+        // Start the service over to restart listening mode
+        this.start();
+    }
+
+    /**
+     * Indicate that the connection was lost and notify the UI Activity.
+     */
+    private void connectionLost() {
+        // Send a failure message back to the Activity
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.TOAST, "Device connection was lost");
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+
+        // Set the state back to STATE_LISTEN
+        setState(STATE_LISTEN);
+
+
+        // Start the service over to restart listening mode
+        this.start();
+    }
+
+    class ConnectThread extends Thread {
+        private final BluetoothDevice mmDevice;
+        private String mSocketType;
+
+        public ConnectThread(BluetoothDevice device) {
+            mmDevice = device;
+            BluetoothSocket tmp = null;
+            mSocketType = "Secure";
+
+            // Get a BluetoothSocket for a connection with the
+            // given BluetoothDevice
+            try {
+                tmp = device.createRfcommSocketToServiceRecord(
+                        MY_UUID_SECURE);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            mSocket = tmp;
+        }
+
+        public void run() {
+            Log.i(TAG, "BEGIN mConnectThread SocketType:" + mSocketType);
+            setName("ConnectThread" + mSocketType);
+
+            // Always cancel discovery because it will slow down a connection
+            mAdapter.cancelDiscovery();
+
+            // Make a connection to the BluetoothSocket
+            try {
+                // This is a blocking call and will only return on a
+                // successful connection or an exception
+                mSocket.connect();
+            } catch (Exception e) {
+                // Close the socket
+                try {
+                    mSocket.close();
+                } catch (Exception e2) {
+                    Log.e(TAG, "unable to close() " + mSocketType +
+                            " socket during connection failure", e2);
+                }
+                connectionFailed();
+                return;
+            }
+
+            // Reset the ConnectThread because we're done
+            synchronized (this) {
+                mConnectThread = null;
+            }
+
+            // Start the connected thread
+            connected(mSocket, mmDevice, mSocketType);
+        }
+
+        public void cancel() {
+            try {
+                mSocket.close();
+                mSocket = null;
+
+            } catch (Exception e) {
+                Log.e(TAG, "close() of connect " + mSocketType + " socket failed", e);
+            }
+        }
+    }
+
+    /**
+     * This thread runs during a connection with a remote device.
+     * It handles all incoming and outgoing transmissions.
+     */
+    class ConnectedThread extends Thread {
+        public ConnectedThread(BluetoothSocket socket, String socketType) {
+            Log.d(TAG, "create ConnectedThread: " + socketType);
+            mSocket = socket;
+            OutputStream tmpOut = null;
+
+            // Get the BluetoothSocket output stream
+            try {
+                tmpOut = socket.getOutputStream();
+            } catch (Exception e) {
+                Log.e(TAG, "temp sockets not created", e);
+            }
+            mOutStream = tmpOut;
+        }
+
+        public void run() {
+            Log.i(TAG, "BEGIN mConnectedThread");
+        }
+
+        /**
+         * Write to the connected OutStream.
+         * @param buffer  The bytes to write
+         */
+        public void write(byte[] buffer) {
+            try {
+                mOutStream.write(buffer);
+                mOutStream.flush();
+            } catch (IOException e) {
+                Log.e(TAG, "Exception during write", e);
+                connectionLost();
+            }
+        }
+
+        public void cancel() {
+            try {
+                mSocket.close();
+                mSocket = null;
+            } catch (Exception e) {
+                Log.e(TAG, "close() of connect socket failed", e);
+            }
+        }
+    }
+//
+//    public byte[] getByteArray() {
+//        byte[] retval = null;
+//        ByteArrayOutputStream bos = new ByteArrayOutputStream(1024);
+//        ObjectOutput out = null;
+//        try {
+//            out = new ObjectOutputStream(bos);
+//            out.writeObject(this);
+//            return bos.toByteArray();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                out.close();
+//                bos.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return retval;
+//    }
+
+    public float X;
+    public float Y;
+//    public float Z;
+//    public int command = 0;
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        abc[0]= (float) (event.values[0]*2.5);
+        abc[1]= (float) (event.values[1]*2.5);
+        abc[2]= (float) (event.values[2]*2.5);
+
+
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            System.arraycopy(abc, 0, acceleration, 0,
+                    event.values.length);
+
+            acceleration = meanFilterAccelSmoothing
+                    .addSamples(acceleration);
+        }
+
+        X = abc[0];
+        Y = abc[1];
+//        Z = event.values[2];
+//        X*=2.5;
+//        Y*=2.5;
+//        Toast.makeText(this,String.valueOf(d),Toast.LENGTH_LONG).show();
+        RemoteCommand rcm = new RemoteCommand();
+
+
+//        dx = (int) X - mPreviousX;
+//        dy = (int) Y - mPreviousY;
+
+        rcm.command = RemoteValues.MOVE_MOUSE_BY;
+        byte[] buffer;
+//        parameter1 = dx;
+//        parameter2 = dy;
+          rcm.parameter1 = (int) -X;
+          rcm.parameter2 = (int) -Y;
+
+        // re-init
+//        rcm.parameter1 = parameter1;
+//        rcm.parameter2 = parameter2;
+//        rcm.parameter1 = parameter1;
+//        rcm.parameter2 = parameter2;
+//      Context context = getApplicationContext();
+//      String text = String.valueOf(parameter1);
+//      int duration = Toast.LENGTH_LONG;
+//      Toast toast = Toast.makeText(context, text, duration);
+//      toast.show();
+//        Toast.makeText(this,String.valueOf(100),Toast.LENGTH_LONG).show();
+
+        buffer = rcm.getByteArray();
+        write(buffer);
+
+        Log.v("X in Handle Touch",String.valueOf(rcm.parameter1));
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.TOAST, String.valueOf(parameter1));
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+        //timeLastSend = System.currentTimeMillis() / 10;
+//        parameter1= 0;
+//        parameter2= 0;
+//        mPreviousX = (int) X;
+//        mPreviousY = (int) Y;
+        Log.v("X in onSensorChanged",String.valueOf(X));
+    }
+
+    static class MeanFilterSmoothing{
+//        private static final String tag = MeanFilterSmoothing.class.getSimpleName();
+
+        private float timeConstant = 1;
+        private float startTime = 0;
+        private float timestamp = 0;
+        private float hz = 0;
+
+        private int count = 0;
+        // The size of the mean filters rolling window.
+        private int filterWindow = 20;
+
+        private boolean dataInit;
+
+        private ArrayList<LinkedList<Number>> dataLists;
+
+        /**
+         * Initialize a new MeanFilter object.
+         */
+        MeanFilterSmoothing()
+        {
+            dataLists = new ArrayList<>();
+            dataInit = false;
+        }
+
+        public void setTimeConstant(float timeConstant)
+        {
+            this.timeConstant = timeConstant;
+        }
+
+        public void reset()
+        {
+            startTime = 0;
+            timestamp = 0;
+            count = 0;
+            hz = 0;
+        }
+
+        /**
+         * Filter the data.
+         *
+         *            contains input the data.
+         * @return the filtered output data.
+         */
+        float[] addSamples(float[] data)
+        {
+            // Initialize the start time.
+            if (startTime == 0)
+            {
+                startTime = System.nanoTime();
+            }
+
+            timestamp = System.nanoTime();
+
+            // Find the sample period (between updates) and convert from
+            // nanoseconds to seconds. Note that the sensor delivery rates can
+            // individually vary by a relatively large time frame, so we use an
+            // averaging technique with the number of sensor updates to
+            // determine the delivery rate.
+            hz = (count++ / ((timestamp - startTime) / 1000000000.0f));
+
+            filterWindow = (int) (hz * timeConstant);
+
+            for (int i = 0; i < data.length; i++)
+            {
+                // Initialize the data structures for the data set.
+                if (!dataInit)
+                {
+                    dataLists.add(new LinkedList<Number>());
+                }
+
+                dataLists.get(i).addLast(data[i]);
+
+                if (dataLists.get(i).size() > filterWindow)
+                {
+                    dataLists.get(i).removeFirst();
+                }
+            }
+
+            dataInit = true;
+
+            float[] means = new float[dataLists.size()];
+
+            for (int i = 0; i < dataLists.size(); i++)
+            {
+                means[i] = (float) getMean(dataLists.get(i));
+            }
+
+            return means;
+        }
+
+        /**
+         * Get the mean of the data set.
+         *
+         * @param data
+         *            the data set.
+         * @return the mean of the data set.
+         */
+        private float getMean(List<Number> data)
+        {
+            float m = 0;
+            float count = 0;
+
+            for (int i = 0; i < data.size(); i++)
+            {
+                m += data.get(i).floatValue();
+                count++;
+            }
+
+            if (count != 0)
+            {
+                m = m / count;
+            }
+
+            return m;
+        }
+
+    }
+
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+
     @Override
     public synchronized void onResume() {
         super.onResume();
         if(D) Log.e(TAG, "+ ON RESUME +");
+        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
+
 
         // Performing this check in onResume() covers the case in which BT was
         // not enabled during onStart(), so we were paused to enable it...
         // onResume() will be called when ACTION_REQUEST_ENABLE activity returns.
         if (mCommandService != null) {
             // Forces update of the connection's state
-            mCommandService.checkConnection();
+            checkConnection();
             // Only if the state is STATE_NONE, do we know that we haven't started already
-            if (mCommandService.getState() == BluetoothCommandService.STATE_NONE) {
+            if (mCommandService.getState() == STATE_NONE) {
                 // Start the Bluetooth command services
-                mCommandService.start();
+                start();
             }
             // Attempt to connect to the last connected device
             if(mConnectedDeviceAddress != null &&
-                    mCommandService.getState() == BluetoothCommandService.STATE_LISTEN){
+                    getState() == STATE_LISTEN){
                 connectDevice(mConnectedDeviceAddress);
             }
         }
+    }
+
+    public void checkConnection() {
+        RemoteCommand rcm = new RemoteCommand();
+        byte[] buffer;
+
+        rcm.command = RemoteValues.CHECK_CONNECTION;
+
+        buffer = rcm.getByteArray();
+        write(buffer);
     }
 
     private void setupCommand() {
         if(D)if(D)Log.d(TAG, "setupCommand()");
 
         // Initialize the BluetoothCommandService to perform bluetooth connections
-        mCommandService = new BluetoothCommandService(this, mHandler);
+//        mCommandService = new BluetoothCommandService(this, mHandler);
+        mCommandService = new BluetoothCommandService(this);
+
     }
 
     @Override
@@ -228,7 +801,8 @@ public class BluetoothRemote extends Activity {
     public void onDestroy() {
         super.onDestroy();
         // Stop the Bluetooth command services
-        if (mCommandService != null) mCommandService.stop();
+        if (mCommandService != null) stop();
+        SM.unregisterListener(this);
         if(D) Log.e(TAG, "--- ON DESTROY ---");
     }
 
@@ -249,47 +823,43 @@ public class BluetoothRemote extends Activity {
         actionBar.setSubtitle(resId);
     }
 
-    private final void setStatus(CharSequence subTitle) {
-        final ActionBar actionBar = getActionBar();
-        actionBar.setSubtitle(subTitle);
-    }
 
     // The Handler that gets information back from the BluetoothCommandService
-    private final Handler mHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            switch (msg.what) {
-            case MESSAGE_STATE_CHANGE:
-                if(D) Log.i(TAG, "MESSAGE_STATE_CHANGE: " + msg.arg1);
-                switch (msg.arg1) {
-                case BluetoothCommandService.STATE_CONNECTED:
-                    setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
-                    break;
-                case BluetoothCommandService.STATE_CONNECTING:
-                    setStatus(R.string.title_connecting);
-                    break;
-                case BluetoothCommandService.STATE_LISTEN:
-                    setStatus(R.string.title_not_connected);
-                    break;
-                case BluetoothCommandService.STATE_NONE:
-                    setStatus(R.string.title_not_connected);
-                    break;
-                }
-                break;
-            case MESSAGE_DEVICE_NAME:
-                // save the connected device's name
-                mConnectedDeviceName = msg.getData().getString(DEVICE_NAME);
-                toast("Connected to " + mConnectedDeviceName);
-                break;
-            case MESSAGE_DEVICE_ADDRESS:
-                mConnectedDeviceAddress = msg.getData().getString(DEVICE_ADDRESS);
-                    break;
-            case MESSAGE_TOAST:
-                toast(msg.getData().getString(TOAST));
-                break;
-            }
-        }
-    };
+//    private final Handler mHandler = new Handler() {
+//        @Override
+//        public void handleMessage(Message msg) {
+//            switch (msg.what) {
+//            case MESSAGE_STATE_CHANGE:
+//                if(D) Log.i(TAG, "MESSAGE_STATE_CHANGE: " + msg.arg1);
+//                switch (msg.arg1) {
+//                case BluetoothCommandService.STATE_CONNECTED:
+//                    setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
+//                    break;
+//                case BluetoothCommandService.STATE_CONNECTING:
+//                    setStatus(R.string.title_connecting);
+//                    break;
+//                case BluetoothCommandService.STATE_LISTEN:
+//                    setStatus(R.string.title_not_connected);
+//                    break;
+//                case BluetoothCommandService.STATE_NONE:
+//                    setStatus(R.string.title_not_connected);
+//                    break;
+//                }
+//                break;
+//            case MESSAGE_DEVICE_NAME:
+//                // save the connected device's name
+//                mConnectedDeviceName = msg.getData().getString(DEVICE_NAME);
+//                toast("Connected to " + mConnectedDeviceName);
+//                break;
+//            case MESSAGE_DEVICE_ADDRESS:
+//                mConnectedDeviceAddress = msg.getData().getString(DEVICE_ADDRESS);
+//                    break;
+//            case MESSAGE_TOAST:
+//                toast(msg.getData().getString(TOAST));
+//                break;
+//            }
+//        }
+//    };
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(D) Log.d(TAG, "onActivityResult " + resultCode);
@@ -302,7 +872,7 @@ public class BluetoothRemote extends Activity {
                 } else {
                     // User did not enable Bluetooth or an error occurred
                     if(D)Log.d(TAG, "BT not enabled");
-                    toast(getResources().getString(R.string.bt_not_enabled_leaving).toString());
+                    toast(getResources().getString(R.string.bt_not_enabled_leaving));
                     finish();
                 }
                 break;
@@ -365,7 +935,7 @@ public class BluetoothRemote extends Activity {
             // Get the BluetoothDevice object
             BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
             // Attempt to connect to the device
-            mCommandService.connect(device);
+            connect(device);
         } catch(IllegalArgumentException e){
             if(D)Log.d(TAG, "Incorrect bluetooth address received from QR code");
         }
@@ -386,11 +956,11 @@ public class BluetoothRemote extends Activity {
             case R.id.reconnect:
                 // Attempt to reconnect to previously connected device
                 if(mConnectedDeviceAddress != null &&
-                        mCommandService.getState() == BluetoothCommandService.STATE_LISTEN){
+                        getState() == STATE_LISTEN){
                     connectDevice(mConnectedDeviceAddress);
                     return true;
                 }
-                else if(mCommandService.getState() != BluetoothCommandService.STATE_LISTEN){
+                else if(getState() != STATE_LISTEN){
                     toast("There is already an active connection with " + mConnectedDeviceName);
                     return false;
                 }
@@ -541,8 +1111,8 @@ public class BluetoothRemote extends Activity {
      * @see #deleteBookmark(String)
      */
     private void removeBookmarkFromFile(int lineNumber) {
-        FileOutputStream tmp = null;
-        FileInputStream fis = null;
+        FileOutputStream tmp;
+        FileInputStream fis;
         try {
             tmp = openFileOutput("tmp", Context.MODE_APPEND);
             fis = openFileInput(filename);

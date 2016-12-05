@@ -6,13 +6,6 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.MotionEvent;
 
@@ -29,7 +22,7 @@ import java.util.UUID;
  * incoming connections, a thread for connecting with a device, and a
  * thread for performing data transmissions when connected.
  */
-public class BluetoothCommandService extends Activity implements SensorEventListener{
+public class BluetoothCommandService extends Activity {
 
     // Parameters
     private long timeLastSend = System.currentTimeMillis() / 10;
@@ -43,6 +36,7 @@ public class BluetoothCommandService extends Activity implements SensorEventList
     private int scrollAmount = -1;
     private int parameter1 = 0;
     private int parameter2 = 0;
+    private int d = 100;
 
     // Debugging
     private static final String TAG = "BluetoothCommandService";
@@ -54,7 +48,7 @@ public class BluetoothCommandService extends Activity implements SensorEventList
 
     // Member fields
     private final BluetoothAdapter mAdapter;
-    private final Handler mHandler;
+//    private final Handler mHandler;
     private ConnectThread mConnectThread;
     private ConnectedThread mConnectedThread;
     private int mState;
@@ -67,25 +61,34 @@ public class BluetoothCommandService extends Activity implements SensorEventList
     public static final int STATE_CONNECTING = 2; // now initiating an outgoing connection
     public static final int STATE_CONNECTED = 3;  // now connected to a remote device
 
-    private Sensor mySensor;
-    private SensorManager SM;
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        SM = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        mySensor = SM.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
-    }
+//    private Sensor mySensor;
+//    private SensorManager SM;
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//
+//        Log.v("","Going in loop");
+//    }
+//
+//    public void onResume(){
+//        super.onResume();
+//    }
+
+
     /**
      * Constructor. Prepares a new BluetoothRemote session.
      * @param context  The UI Activity Context
-     * @param handler  A Handler to send messages back to the UI Activity
+//     * @param handler  A Handler to send messages back to the UI Activity
      */
 
 
-    public BluetoothCommandService(Context context, Handler handler) {
-        mAdapter = BluetoothAdapter.getDefaultAdapter();
+//    public BluetoothCommandService(Context context, Handler handler) {
+    public BluetoothCommandService(Context context) {
+//        SM = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+//        mySensor = SM.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+//        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
+            mAdapter = BluetoothAdapter.getDefaultAdapter();
         mState = STATE_NONE;
-        mHandler = handler;
+//        mHandler = handler;
         mSocket = null;
     }
 
@@ -99,7 +102,7 @@ public class BluetoothCommandService extends Activity implements SensorEventList
         mState = state;
 
         // Give the new state to the Handler so the UI Activity can update
-        mHandler.obtainMessage(BluetoothRemote.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
+//        mHandler.obtainMessage(BluetoothRemote.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
     }
 
     /**
@@ -186,18 +189,18 @@ public class BluetoothCommandService extends Activity implements SensorEventList
         mConnectedThread.start();
 
         // Send the name of the connected device back to the UI Activity
-        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_DEVICE_NAME);
-        Bundle bundle = new Bundle();
-        bundle.putString(BluetoothRemote.DEVICE_NAME, device.getName());
-        msg.setData(bundle);
-        mHandler.sendMessage(msg);
-
-        // Send the address of the connected device back to the UI Activity
-        msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_DEVICE_ADDRESS);
-        bundle = new Bundle();
-        bundle.putString(BluetoothRemote.DEVICE_ADDRESS, device.getAddress());
-        msg.setData(bundle);
-        mHandler.sendMessage(msg);
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_DEVICE_NAME);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.DEVICE_NAME, device.getName());
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+//
+//        // Send the address of the connected device back to the UI Activity
+//        msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_DEVICE_ADDRESS);
+//        bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.DEVICE_ADDRESS, device.getAddress());
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
 
         setState(STATE_CONNECTED);
     }
@@ -243,11 +246,11 @@ public class BluetoothCommandService extends Activity implements SensorEventList
      */
     private void connectionFailed() {
         // Send a failure message back to the Activity
-        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
-        Bundle bundle = new Bundle();
-        bundle.putString(BluetoothRemote.TOAST, "Unable to connect device");
-        msg.setData(bundle);
-        mHandler.sendMessage(msg);
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.TOAST, "Unable to connect device");
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
 
         // Start the service over to restart listening mode
         BluetoothCommandService.this.start();
@@ -258,11 +261,11 @@ public class BluetoothCommandService extends Activity implements SensorEventList
      */
     private void connectionLost() {
         // Send a failure message back to the Activity
-        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
-        Bundle bundle = new Bundle();
-        bundle.putString(BluetoothRemote.TOAST, "Device connection was lost");
-        msg.setData(bundle);
-        mHandler.sendMessage(msg);
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.TOAST, "Device connection was lost");
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
 
         // Set the state back to STATE_LISTEN
         setState(STATE_LISTEN);
@@ -272,21 +275,23 @@ public class BluetoothCommandService extends Activity implements SensorEventList
         BluetoothCommandService.this.start();
     }
 
-    public float X;
-    public float Y;
+    public float X=1;
+    public float Y=1;
     public float Z;
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-
-        X = event.values[0];
-        Y = event.values[1];
-        Z = event.values[2];
-    }
-
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int i) {
-
-    }
+//    @Override
+//    public void onSensorChanged(SensorEvent event) {
+//
+//        X = event.values[0];
+//        Y = event.values[1];
+//        Z = event.values[2];
+////        Toast.makeText(this,String.valueOf(d),Toast.LENGTH_LONG).show();
+//        Log.v("X in onSensorChanged",String.valueOf(X));
+//    }
+//
+//    @Override
+//    public void onAccuracyChanged(Sensor sensor, int i) {
+//
+//    }
 
 
     /**
@@ -294,7 +299,7 @@ public class BluetoothCommandService extends Activity implements SensorEventList
      * with a device. It runs straight through; the connection either
      * succeeds or fails.
      */
-    private class ConnectThread extends Thread {
+    class ConnectThread extends Thread {
         private final BluetoothDevice mmDevice;
         private String mSocketType;
 
@@ -362,7 +367,7 @@ public class BluetoothCommandService extends Activity implements SensorEventList
      * This thread runs during a connection with a remote device.
      * It handles all incoming and outgoing transmissions.
      */
-    private class ConnectedThread extends Thread {
+    class ConnectedThread extends Thread {
         public ConnectedThread(BluetoothSocket socket, String socketType) {
             Log.d(TAG, "create ConnectedThread: " + socketType);
             mSocket = socket;
@@ -480,9 +485,11 @@ public class BluetoothCommandService extends Activity implements SensorEventList
         write(buffer);
     }
 
+//    public int dx;
+//    public int dy;
+
 
     public void handleTouch(MotionEvent m) {
-
 //        if(m.getActionMasked() == MotionEvent.ACTION_DOWN){ // for recognizing a tap rather than a move
 //
 //                downXPosition = (int) X;
@@ -498,48 +505,58 @@ public class BluetoothCommandService extends Activity implements SensorEventList
 //            if(dx <= 5 && dy <= 5){
 //                handleLeftClick();
 //            }
-            int dx = (int) X;
-            int dy = (int) Y;
+
 //            if(dx <= 5 && dy <= 5){
 //                handleLeftClick();
 //            }
 
 
 
-            if((System.currentTimeMillis() / 10 - timeLastSend) > 2){ // lower amount of packets sent
-                int x = (int) X;
-                int y = (int) Y;
+        //if((System.currentTimeMillis() / 10 - timeLastSend) > 2){ // lower amount of packets sent
+//        int x = (int) X;
+//        int y = (int) Y;
 //                if(x != 0 || y != 0){
 //                    int action = m.getActionMasked();
 //                    if(action != MotionEvent.ACTION_MOVE){
 //                        mPreviousX = x;
 //                        mPreviousY = y;
 //                    }
-
-                    RemoteCommand rcm = new RemoteCommand();
-                    byte[] buffer;
-
-//                    int dx = x - mPreviousX;
-//                    int dy = y - mPreviousY;
-
-                    rcm.command = RemoteValues.MOVE_MOUSE_BY;
-
-                    parameter1 = dx;
-                    parameter2 = dy;
-
-                    // re-init
-                    rcm.parameter1 = parameter1;
-                    rcm.parameter2 = parameter2;
-
-                    buffer = rcm.getByteArray();
-                    write(buffer);
-                    timeLastSend = System.currentTimeMillis() / 10;
-                    parameter1= 0;
-                    parameter2= 0;
-
-                    mPreviousX = x;
-                    mPreviousY = y;
-                }
+//        RemoteCommand rcm = new RemoteCommand();
+//        byte[] buffer;
+//
+//        dx = (int) X - mPreviousX;
+//        dy = (int) Y - mPreviousY;
+//
+//        rcm.command = RemoteValues.MOVE_MOUSE_BY;
+//
+//        parameter1 = dx;
+//        parameter2 = dy;
+//
+//        // re-init
+//        rcm.parameter1 = parameter1;
+//        rcm.parameter2 = parameter2;
+//      Context context = getApplicationContext();
+//      String text = String.valueOf(parameter1);
+//      int duration = Toast.LENGTH_LONG;
+//      Toast toast = Toast.makeText(context, text, duration);
+//      toast.show();
+//        Toast.makeText(this,String.valueOf(100),Toast.LENGTH_LONG).show();
+//
+//        buffer = rcm.getByteArray();
+//        write(buffer);
+//
+//        Log.v("X in Handle Touch",String.valueOf(X));
+//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(BluetoothRemote.TOAST, String.valueOf(parameter1));
+//        msg.setData(bundle);
+//        mHandler.sendMessage(msg);
+//        //timeLastSend = System.currentTimeMillis() / 10;
+//        parameter1= 0;
+//        parameter2= 0;
+//        mPreviousX = (int) X;
+//        mPreviousY = (int) Y;
+                //}
             }
 
 

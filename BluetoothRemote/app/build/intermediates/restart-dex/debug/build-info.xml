@@ -5,36 +5,36 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="12504144397459"
+    timestamp="59285702294548"
     token="-11773905810988488"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="146" />
+        duration="280" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="7" />
+        duration="83" />
     <task
         name="verifier"
-        duration="1" />
+        duration="14" />
 
     <artifact
         location="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="12316178635291"
+        timestamp="57972770145672"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\AndroidStudioProjects\BluetoothRemote\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="12504144397459"
+        timestamp="59285702294548"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\AndroidStudioProjects\BluetoothRemote\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"

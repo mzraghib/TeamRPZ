@@ -1,9 +1,9 @@
 #Internal package file, do not edit.
-#Sun Nov 27 19:44:17 EST 2016
+#Sat Dec 03 12:57:02 EST 2016
 8.set=ANDROID_RESOURCE
 1.base=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_
 1.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\custom_title.xml
-3.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\ic_action_photo.png
+3.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 3.base=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_
 4.set=ANDROID_RESOURCE
 5.base=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -24,7 +24,7 @@
 6.set=ANDROID_RESOURCE
 2.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
 2.base=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_
-4.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+4.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\ic_action_photo.png
 4.base=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_
 6.base=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_
 6.file=D\:\\AndroidStudioProjects\\BluetoothRemote\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\app_icon.png
