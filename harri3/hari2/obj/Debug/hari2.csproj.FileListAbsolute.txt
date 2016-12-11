@@ -7,8 +7,5 @@ C:\Users\haris\documents\visual studio 2015\Projects\hari2\hari2\obj\Debug\hari2
 C:\Users\haris\documents\visual studio 2015\Projects\hari2\hari2\obj\Debug\hari2.csproj.GenerateResource.Cache
 C:\Users\haris\documents\visual studio 2015\Projects\hari2\hari2\obj\Debug\hari2.exe
 C:\Users\haris\documents\visual studio 2015\Projects\hari2\hari2\obj\Debug\hari2.pdb
-C:\Users\haris\Documents\Visual Studio 2015\Projects\hari2\hari2\obj\Debug\hari2.csprojResolveAssemblyReference.cache
 C:\Users\haris\Documents\Visual Studio 2015\Projects\hari2\hari2\bin\Debug\hari2.pdb
-C:\Users\haris\Desktop\TeamRPZ\hari2\hari2\bin\Debug\hari2.exe.config
-C:\Users\haris\Desktop\TeamRPZ\hari2\hari2\obj\Debug\hari2.exe
-C:\Users\haris\Desktop\TeamRPZ\hari2\hari2\obj\Debug\hari2.pdb
+C:\Users\haris\Documents\Visual Studio 2015\Projects\hari2\hari2\obj\Debug\hari2.csprojResolveAssemblyReference.cache
