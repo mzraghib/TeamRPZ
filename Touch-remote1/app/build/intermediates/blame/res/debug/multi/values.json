@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 154
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 108,
+                        "startOffset": 111,
                         "endColumn": 53,
-                        "endOffset": 157
+                        "endOffset": 160
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 257
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 519,
+                        "startOffset": 531,
                         "endColumn": 102,
-                        "endOffset": 617
+                        "endOffset": 629
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 284
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 233,
+                        "startOffset": 240,
                         "endColumn": 34,
-                        "endOffset": 263
+                        "endOffset": 270
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 323
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 268,
+                        "startOffset": 276,
                         "endColumn": 38,
-                        "endOffset": 302
+                        "endOffset": 310
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 382
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 917,
+                        "startOffset": 936,
                         "endColumn": 58,
-                        "endOffset": 971
+                        "endOffset": 990
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 422
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 193,
+                        "startOffset": 199,
                         "endColumn": 39,
-                        "endOffset": 228
+                        "endOffset": 234
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 482
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 307,
+                        "startOffset": 316,
                         "endColumn": 59,
-                        "endOffset": 362
+                        "endOffset": 371
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 558
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 367,
+                        "startOffset": 377,
                         "endColumn": 75,
-                        "endOffset": 438
+                        "endOffset": 448
                     }
                 }
             },
@@ -163,13 +163,13 @@
                     "endOffset": 617
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 1079,
+                        "startOffset": 1101,
                         "endColumn": 58,
-                        "endOffset": 1133
+                        "endOffset": 1155
                     }
                 }
             },
@@ -182,13 +182,13 @@
                     "endOffset": 666
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 1030,
+                        "startOffset": 1051,
                         "endColumn": 48,
-                        "endOffset": 1074
+                        "endOffset": 1095
                     }
                 }
             },
@@ -201,13 +201,13 @@
                     "endOffset": 728
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 1138,
+                        "startOffset": 1161,
                         "endColumn": 61,
-                        "endOffset": 1195
+                        "endOffset": 1218
                     }
                 }
             },
@@ -220,13 +220,13 @@
                     "endOffset": 787
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 1298,
+                        "startOffset": 1325,
                         "endColumn": 58,
-                        "endOffset": 1352
+                        "endOffset": 1379
                     }
                 }
             },
@@ -239,13 +239,13 @@
                     "endOffset": 863
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 443,
+                        "startOffset": 454,
                         "endColumn": 75,
-                        "endOffset": 514
+                        "endOffset": 525
                     }
                 }
             },
@@ -258,13 +258,13 @@
                     "endOffset": 911
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 869,
+                        "startOffset": 887,
                         "endColumn": 47,
-                        "endOffset": 912
+                        "endOffset": 930
                     }
                 }
             },
@@ -277,13 +277,13 @@
                     "endOffset": 965
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 976,
+                        "startOffset": 996,
                         "endColumn": 53,
-                        "endOffset": 1025
+                        "endOffset": 1045
                     }
                 }
             },
@@ -296,13 +296,13 @@
                     "endOffset": 1027
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1236,
+                        "startOffset": 1262,
                         "endColumn": 61,
-                        "endOffset": 1293
+                        "endOffset": 1319
                     }
                 }
             },
@@ -315,13 +315,13 @@
                     "endOffset": 1081
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 1357,
+                        "startOffset": 1385,
                         "endColumn": 53,
-                        "endOffset": 1406
+                        "endOffset": 1434
                     }
                 }
             },
@@ -334,13 +334,13 @@
                     "endOffset": 1178
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 679,
+                        "startOffset": 693,
                         "endColumn": 100,
-                        "endOffset": 775
+                        "endOffset": 789
                     }
                 }
             },
@@ -353,13 +353,13 @@
                     "endOffset": 1235
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 622,
+                        "startOffset": 635,
                         "endColumn": 56,
-                        "endOffset": 674
+                        "endOffset": 687
                     }
                 }
             },
@@ -372,13 +372,13 @@
                     "endOffset": 1297
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 780,
+                        "startOffset": 795,
                         "endColumn": 61,
-                        "endOffset": 837
+                        "endOffset": 852
                     }
                 }
             },
@@ -392,14 +392,14 @@
                     "endOffset": 1643
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 186,
+                        "startOffset": 192,
                         "endLine": 13,
                         "endColumn": 12,
-                        "endOffset": 527
+                        "endOffset": 540
                     }
                 }
             },
@@ -413,14 +413,14 @@
                     "endOffset": 1858
                 },
                 "from": {
-                    "file": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 565,
+                        "startOffset": 581,
                         "endLine": 19,
                         "endColumn": 12,
-                        "endOffset": 775
+                        "endOffset": 794
                     }
                 }
             }
