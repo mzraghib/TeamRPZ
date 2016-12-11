@@ -12,10 +12,10 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-feature android:name="android.hardware.screen.portrait" />
 
-    <application android:label="@string/app_name"
-                 android:icon="@drawable/app_icon" >
+    <application android:label="Phone Mouse"
+                 android:icon="@mipmap/ic_launcher" >
         <activity android:name="com.example.BluetoothRemote.BluetoothRemote"
-                  android:label="@string/app_name"
+                  android:label="Phone Mouse"
                   android:configChanges="orientation|keyboardHidden"
                   android:screenOrientation="portrait"
                   android:windowSoftInputMode="stateHidden">

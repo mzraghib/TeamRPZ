@@ -40,15 +40,15 @@ ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest
 application
 ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:15:5-31:19
 	android:label
-		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:15:18-50
+		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:15:18-45
 	android:icon
-		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:16:18-51
+		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:16:18-52
 activity#com.example.BluetoothRemote.BluetoothRemote
 ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:screenOrientation
 		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:20:19-55
 	android:label
-		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:18:19-51
+		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:18:19-46
 	android:windowSoftInputMode
 		ADDED from D:\AndroidStudioProjects\BluetoothRemote\app\src\main\AndroidManifest.xml:21:19-60
 	android:configChanges
