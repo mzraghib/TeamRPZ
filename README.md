@@ -5,5 +5,3 @@ We created a Bluetooth server on Windows to receive the data and control the cur
 
 #About Us
 We are Android and Windows application noobs trying to jump into Android programming with an ambitious project. We believe we'll be a force to reckon with in some time!
-
-Our code lies in branches since nothing is final yet.
