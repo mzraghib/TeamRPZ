@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/label_sensor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/accelerometer_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_orange" />
+
+            <TextView
+                android:id="@+id/label_app_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/label_sensor_name"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/x_axis_label"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/layout_axis_positive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout_header_pos_axis_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/header_label_pos_axis_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/axis_label"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_orange" />
+
+            <TextView
+                android:id="@+id/label_pos_axis_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_label_pos_axis_name"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/positive_label"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header_pos_axis_max"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/layout_pos_axis_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/label_pos_axis_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/max_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_pos_axis_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_pos_axis_max"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pos_axis_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_pos_axis_max" >
+
+                <TextView
+                    android:id="@+id/label_pos_axis_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/min_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_pos_axis_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_pos_axis_min"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pos_axis_mean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_pos_axis_min" >
+
+                <TextView
+                    android:id="@+id/label_pos_axis_mean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/mean_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_pos_axis_mean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_pos_axis_mean"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pos_axis_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_pos_axis_mean" >
+
+                <TextView
+                    android:id="@+id/label_pos_axis_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/rms_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_pos_axis_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_pos_axis_rms"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_axis_negative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout_header_axis_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/header_label_neg_axis_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/axis_label"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_orange" />
+
+            <TextView
+                android:id="@+id/label_neg_axis_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_label_neg_axis_name"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/negative_label"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header_axis_min"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/layout_neg_axis_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/label_neg_axis_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/max_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_neg_axis_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_neg_axis_max"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_neg_axis_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_neg_axis_max" >
+
+                <TextView
+                    android:id="@+id/label_neg_axis_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/min_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_neg_axis_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_neg_axis_min"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_neg_axis_mean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_neg_axis_min" >
+
+                <TextView
+                    android:id="@+id/label_neg_axis_mean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/mean_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_neg_axis_mean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_neg_axis_mean"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_neg_axis_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_neg_axis_mean" >
+
+                <TextView
+                    android:id="@+id/label_neg_axis_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/rms_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_neg_axis_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_neg_axis_rms"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_axis_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout_header_axis_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/header_label_axis_total_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/axis_label"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_orange" />
+
+            <TextView
+                android:id="@+id/label_axis_total_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_label_axis_total_name"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/noise_label"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header_axis_total"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/layout_noise_axis_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/label_axis_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/max_amp_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_noise_axis_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_axis_total"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_noise_axis_rms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_noise_axis_max" >
+
+                <TextView
+                    android:id="@+id/label_noise_axis_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/rms_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_noise_axis_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_noise_axis_rms"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_noise_axis_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_noise_axis_rms" >
+
+                <TextView
+                    android:id="@+id/label_noise_axis_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/frequency_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:id="@+id/value_noise_axis_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/label_noise_axis_frequency"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/default_value"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
