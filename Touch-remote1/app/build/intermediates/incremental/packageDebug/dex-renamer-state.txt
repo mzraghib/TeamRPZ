@@ -1,0 +1,4 @@
+#Sat Dec 10 22:03:29 EST 2016
+base.0=C\:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
