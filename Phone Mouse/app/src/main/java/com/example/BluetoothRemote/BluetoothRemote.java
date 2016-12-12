@@ -280,42 +280,20 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
         RemoteCommand rcm = new RemoteCommand();
 
 
-//        dx = (int) X - mPreviousX;
-//        dy = (int) Y - mPreviousY;
 
         rcm.command = RemoteValues.MOVE_MOUSE_BY;
         byte[] buffer;
-//        parameter1 = dx;
-//        parameter2 = dy;
+
         rcm.parameter1 = (int) -X;
         rcm.parameter2 = (int) -Y;
 
-        // re-init
-//        rcm.parameter1 = parameter1;
-//        rcm.parameter2 = parameter2;
-//        rcm.parameter1 = parameter1;
-//        rcm.parameter2 = parameter2;
-//      Context context = getApplicationContext();
-//      String text = String.valueOf(parameter1);
-//      int duration = Toast.LENGTH_LONG;
-//      Toast toast = Toast.makeText(context, text, duration);
-//      toast.show();
-//        Toast.makeText(this,String.valueOf(100),Toast.LENGTH_LONG).show();
+
 
         buffer = rcm.getByteArray();
         mCommandService.write(buffer);
 
-        Log.v("X in Handle Touch",String.valueOf(rcm.parameter1));
-//        Message msg = mHandler.obtainMessage(BluetoothRemote.MESSAGE_TOAST);
-//        Bundle bundle = new Bundle();
-//        bundle.putString(BluetoothRemote.TOAST, String.valueOf(parameter1));
-//        msg.setData(bundle);
-//        mHandler.sendMessage(msg);
-        //timeLastSend = System.currentTimeMillis() / 10;
-//        parameter1= 0;
-//        parameter2= 0;
-//        mPreviousX = (int) X;
-//        mPreviousY = (int) Y;
+//        Log.v("X in Handle Touch",String.valueOf(rcm.parameter1));
+
         Log.v("X in onSensorChanged",String.valueOf(X));
     }
 

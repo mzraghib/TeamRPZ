@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bookmark_name.xml",
-        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\layout\\bookmark_name.xml"
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bookmark_list.xml",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\layout\\bookmark_list.xml"
     },
     {
-        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_title.xml",
-        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\layout\\custom_title.xml"
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\layout\\main.xml"
     },
     {
-        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bookmark_list.xml",
-        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\layout\\bookmark_list.xml"
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bookmark_name.xml",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\layout\\bookmark_name.xml"
     },
     {
-        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\layout\\main.xml"
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_title.xml",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\layout\\custom_title.xml"
     }
 ]
