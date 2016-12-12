@@ -1,6 +1,6 @@
 # TeamRPZ
 
-In this project, we made an android app that can control the cursor on windows not only by using the smartphone's touch interface but lso through otion control using sensor(accelerometer). Users can then control sensitivity and use their phones for various applications like presentations, gaming, Image/ Video editing, etc.
+In this project, we made an android app that can control the cursor on windows not only by using the smartphone's touch interface but also through motion control using sensor(accelerometer). Users can then control sensitivity and use their phones for various applications like presentations, gaming, Image/ Video editing, etc.
 We created a Bluetooth server on Windows to connect it with the phone, the server would receive the data and control the cursor.
 
 #Things to Download:
