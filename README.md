@@ -13,7 +13,7 @@ We are Android and Windows application noobs trying to jump into Android program
 #How-to
 Simply click on the toggle button to move from Motion control to Touch control.
 
-For more info please refer the Wiki!!!
+For more info please refer the Wiki tab on our github page!!!
 
 #Future Development
 Coming soon on Android Smart-Watches!!!
