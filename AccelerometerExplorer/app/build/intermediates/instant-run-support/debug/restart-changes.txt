@@ -1,0 +1,1 @@
+CHANGED,/Users/kaleb/StudioProjects/AccelerationExplorer/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/kircherelectronics/accelerationexplorer/filter/ImuLaCfOrientation.class

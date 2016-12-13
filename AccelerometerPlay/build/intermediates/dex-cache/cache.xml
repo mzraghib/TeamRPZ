@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\AccelerometerPlay\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e2d522963c5a52145ac5d4e9dd64e1b14c6d97c2">
+        <dex dex="D:\AndroidStudioProjects\AccelerometerPlay\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_29182414e354f14dec5eaae75200f37ccf48fb33\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\AccelerometerPlay\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="046e4e535461dc0eb5efdf2c683c2e612ead6827">
+        <dex dex="D:\AndroidStudioProjects\AccelerometerPlay\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f29bc87f6d2bb879e6b78ea40ec69f9c260e02b0\classes.dex" />
+    </item>
+
+</items>

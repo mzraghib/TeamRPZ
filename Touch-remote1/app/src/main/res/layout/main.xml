@@ -62,7 +62,7 @@
         android:layout_below="@+id/enterButton"
         android:layout_alignParentRight="true"
         android:id="@+id/toggleButton"
-        android:textOn="Motion"
-        android:textOff="Touch"
+        android:textOn="Touch"
+        android:textOff="Motion"
         android:checked="false" />
 </RelativeLayout>

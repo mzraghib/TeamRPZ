@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_photo.png",
-        "source": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_photo.png"
+        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_refresh.png",
+        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_refresh.png"
     },
     {
-        "merged": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\app_icon.png",
-        "source": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\drawable-xhdpi\\app_icon.png"
+        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\app_icon.png",
+        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\drawable-xhdpi\\app_icon.png"
     },
     {
-        "merged": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_refresh.png",
-        "source": "C:\\Users\\Prateek\\Desktop\\Touch-remote1\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_refresh.png"
+        "merged": "D:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_photo.png",
+        "source": "D:\\TeamRPZ\\Touch-remote1\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_photo.png"
     }
 ]
