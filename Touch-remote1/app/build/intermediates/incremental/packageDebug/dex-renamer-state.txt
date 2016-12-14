@@ -1,7 +1,0 @@
-#Sun Dec 11 13:04:42 EST 2016
-base.0=D\:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9f40edc2be52962d949505f0142312401a09e25d
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=D\:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6a04184a2b3d1dc10d7ccb3d5a75d694673774d3\\classes.dex
-base.1=D\:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6a04184a2b3d1dc10d7ccb3d5a75d694673774d3
-file.0=D\:\\TeamRPZ\\Touch-remote1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9f40edc2be52962d949505f0142312401a09e25d\\classes.dex
