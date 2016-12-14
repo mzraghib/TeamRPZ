@@ -1,7 +1,7 @@
 ECLIPSE ANDROID PROJECT IMPORT SUMMARY
 ======================================
 
-Ignored Files:
+Ignored Files :
 --------------
 The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
@@ -18,7 +18,7 @@ so manually move them:
 * BluetoothRemote.iml
 * README.md
 
-Moved Files:
+Moved Files :
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
@@ -27,7 +27,7 @@ Eclipse projects. Here's how the projects were restructured:
 * res\ => app\src\main\res\
 * src\ => app\src\main\java\
 
-Next Steps:
+Next Steps :
 -----------
 You can now build the project. The Gradle project needs network
 connectivity to download dependencies.
