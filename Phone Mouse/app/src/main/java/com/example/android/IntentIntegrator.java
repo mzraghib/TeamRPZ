@@ -98,13 +98,8 @@ import java.util.Map;
  * <p>Some formats are not enabled by default even when scanning with {@link #ALL_CODE_TYPES}.
  * Use {@link #initiateScan(java.util.Collection)} with a collection containing the names of
  * formats to scan for explicitly, like "PDF_417", to use such formats.</p>
- *
- * @author Sean Owen
- * @author Fred Lin
- * @author Isaac Potoczny-Jones
- * @author Brad Drehmer
- * @author gcstang
  */
+
 public class IntentIntegrator {
 
   public static final int REQUEST_CODE = 2;
