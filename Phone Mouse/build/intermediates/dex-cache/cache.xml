@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\TeamRPZ\Touch-remote1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="03e4daa35db1551bfb4400bcc46803e9f154d8fb">
+        <dex dex="D:\TeamRPZ\Touch-remote1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9f40edc2be52962d949505f0142312401a09e25d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="55c216b4553c3a59fc8833999f10d372b1287dd3">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1f930d8eba81ee3a774b58692a95b8880ea756e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c4be384d3418b4f78ffbdf7c77f37680a995e1b1">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f5509ca03e0bb743d4cb563142ba3bf3d885f611\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\TeamRPZ\Touch-remote1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="57723a86f5a38f80457f626de1d525834c76e715">
+        <dex dex="D:\TeamRPZ\Touch-remote1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6a04184a2b3d1dc10d7ccb3d5a75d694673774d3\classes.dex" />
+    </item>
+
+</items>

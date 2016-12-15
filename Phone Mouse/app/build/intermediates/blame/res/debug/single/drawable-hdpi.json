@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_photo.png",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\drawable-hdpi\\ic_action_photo.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\app_icon.png",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\drawable-hdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_refresh.png",
+        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\drawable-hdpi\\ic_action_refresh.png"
+    }
+]
