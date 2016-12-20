@@ -1,9 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/rlayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".MainActivity" >
+                android:layout_height="match_parent" >
+                <!--tools:context=".MainActivity" >-->
 
     <TextView
             android:id="@+id/tv1"
@@ -65,4 +66,14 @@
         android:textOn="Touch"
         android:textOff="Motion"
         android:checked="false" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
 </RelativeLayout>

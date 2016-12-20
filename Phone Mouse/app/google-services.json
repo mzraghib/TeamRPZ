@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "270506006813",
+    "firebase_url": "https://phone-mouse.firebaseio.com",
+    "project_id": "phone-mouse",
+    "storage_bucket": "phone-mouse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270506006813:android:0c6136a4ea634ce8",
+        "android_client_info": {
+          "package_name": "com.example.BluetoothRemote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270506006813-efa53qobclhoq1e96qprf066kto6v2qt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.BluetoothRemote",
+            "certificate_hash": "AF3C311433D4123D0CC19064638DD0FDB58E6D0F"
+          }
+        },
+        {
+          "client_id": "270506006813-qddarl5odh094502vrftlahh62e6ubi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzLJzuUqCd4eGCNRgVnUk9USYJ52r6py0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270506006813-qddarl5odh094502vrftlahh62e6ubi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

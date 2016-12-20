@@ -37,6 +37,9 @@ import com.example.RemoteCommand;
 import com.example.RemoteValues;
 import com.example.android.IntentIntegrator;
 import com.example.android.IntentResult;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -116,6 +119,8 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
     private BluetoothSocket mSocket;
     private OutputStream mOutStream;
 
+    private AdView mAdView;
+
     public static final int STATE_NONE = 0;       // we're doing nothing
     public static final int STATE_LISTEN = 1;     // now listening for incoming connections
     public static final int STATE_CONNECTING = 2; // now initiating an outgoing connection
@@ -133,6 +138,23 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 //        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
         // Set up the window layout
         setContentView(R.layout.main);
+
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-2724739979625494~7056159969");
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest request = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("3A7B116AFC6C6B578B21BE7832D8DE6A")
+                .build();
+
+        mAdView.loadAd(request );
+//        AdView adView = new AdView(this);
+//        adView.setAdSize(AdSize.SMART_BANNER);
+//        mAdView.loadAd(new AdRequest.Builder().build());
+
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
+//        MobileAds.initialize(getApplicationContext(), "ca-app-pub-2724739979625494~7056159969");
+
         tgbutton = (ToggleButton) findViewById(R.id.toggleButton);
         tgbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -246,13 +268,33 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
         mState = state;
 
         // Give the new state to the Handler so the UI Activity can update
-//        mHandler.obtainMessage(BluetoothRemote.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
+        mHandler.obtainMessage(BluetoothRemote.MESSAGE_STATE_CHANGE, state, -1).sendToTarget();
     }
 
     /**
      * Return the current connection state. */
     public synchronized int getState() {
         return mState;
+    }
+
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        int action = event.getAction();
+        int keyCode = event.getKeyCode();
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                if (action == KeyEvent.ACTION_DOWN) {
+                    mCommandService.handleLeftClick();
+                }
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                if (action == KeyEvent.ACTION_DOWN) {
+                    mCommandService.handleRightClick();
+                }
+                return true;
+            default:
+                return super.dispatchKeyEvent(event);
+        }
     }
 
 
@@ -382,7 +424,7 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 
             for (int i = 0; i < dataLists.size(); i++)
             {
-                means[i] = (float) getMean(dataLists.get(i));
+                means[i] = getMean(dataLists.get(i));
             }
 
             return means;

@@ -3,21 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="D:\TeamRPZ\Touch-remote1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="03e4daa35db1551bfb4400bcc46803e9f154d8fb">
-        <dex dex="D:\TeamRPZ\Touch-remote1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9f40edc2be52962d949505f0142312401a09e25d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="55c216b4553c3a59fc8833999f10d372b1287dd3">
-        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1f930d8eba81ee3a774b58692a95b8880ea756e6\classes.dex" />
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.0_d0e64628e8a6bde84bf2ca338ecc1effddf31892\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -25,17 +16,134 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="c4be384d3418b4f78ffbdf7c77f37680a995e1b1">
+        sha1="9dcaab9a2c48f8f8595caa30efdfc6d4dc9bcfff">
         <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f5509ca03e0bb743d4cb563142ba3bf3d885f611\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\TeamRPZ\Touch-remote1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="57723a86f5a38f80457f626de1d525834c76e715">
-        <dex dex="D:\TeamRPZ\Touch-remote1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6a04184a2b3d1dc10d7ccb3d5a75d694673774d3\classes.dex" />
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.2.1_b07c5bc6390464e0de1ec868c83bbc43b59d7f9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.2.1_4d14bbfaf3cd68d34ff27e7f358ea59be6eb08c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.2.1_ee657bf8fe0716b7d5e21e07b58039029b38ae96\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.1_6cef879f5a4700c4c44970c9b6d2cd1094077d66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="055e6503dd3523102a0c89aa8e891025fd0af972">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1f930d8eba81ee3a774b58692a95b8880ea756e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.1_87e5d807cd0d0bed8fb19bcb22c56979d2d26adf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AppData\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.0_33bcf3eed13f47e9813d24ce730317624e030a91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.2.1_1ecb812992b3de78f4ffe5b75f99c5d56e4611ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.2.1_5f579bd88b61bb69d0577922f6aa55fd98619653\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6a0f2d219f82db499ac03d5a985c4eb3e83fc422">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.2.1_c191cecacb7525a6ff3e792967f109a10a2b1090\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.2.1_5df60f920a562fc76284425a95cf39028e95b1da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_ffcd2b9392d12d8b14fd950805eefc13fdc24e90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.2.1_d1532db6e863ec4e55735f3fd02e17b7efe14308\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="D:\AndroidStudioProjects\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.1_880f78be14ecef4da2f54578378f781eb1b5ea66\classes.dex" />
     </item>
 
 </items>
