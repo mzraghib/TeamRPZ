@@ -49,6 +49,50 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270506006813:android:0326338f2d738ae1",
+        "android_client_info": {
+          "package_name": "com.prateekrishab.BluetoothRemote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270506006813-ql7gkkhaemputr69m17ngsebhm0gr06p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prateekrishab.BluetoothRemote",
+            "certificate_hash": "AF3C311433D4123D0CC19064638DD0FDB58E6D0F"
+          }
+        },
+        {
+          "client_id": "270506006813-qddarl5odh094502vrftlahh62e6ubi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzLJzuUqCd4eGCNRgVnUk9USYJ52r6py0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270506006813-qddarl5odh094502vrftlahh62e6ubi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

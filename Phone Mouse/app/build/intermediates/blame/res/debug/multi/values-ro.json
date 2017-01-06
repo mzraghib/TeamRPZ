@@ -1,23 +1,23 @@
 [
     {
-        "outputFile": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
+        "outputFile": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 105,
-                    "endColumn": 74,
-                    "endOffset": 175
+                    "endColumn": 71,
+                    "endOffset": 172
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads-lite\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 74,
-                        "endOffset": 350
+                        "startColumn": 0,
+                        "startOffset": 237,
+                        "endColumn": 67,
+                        "endOffset": 304
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 180,
-                    "endColumn": 268,
-                    "endOffset": 444
+                    "startOffset": 177,
+                    "endColumn": 108,
+                    "endOffset": 281
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 329,
-                        "endColumn": 268,
-                        "endOffset": 593
+                        "startColumn": 0,
+                        "startOffset": 283,
+                        "endColumn": 104,
+                        "endOffset": 387
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 449,
-                    "endColumn": 129,
-                    "endOffset": 574
+                    "startOffset": 286,
+                    "endColumn": 191,
+                    "endOffset": 473
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 598,
-                        "endColumn": 129,
-                        "endOffset": 723
+                        "startColumn": 0,
+                        "startOffset": 388,
+                        "endColumn": 191,
+                        "endOffset": 579
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 579,
-                    "endColumn": 191,
-                    "endOffset": 766
+                    "startOffset": 478,
+                    "endColumn": 130,
+                    "endOffset": 604
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 728,
-                        "endColumn": 191,
-                        "endOffset": 915
+                        "startColumn": 0,
+                        "startOffset": 580,
+                        "endColumn": 126,
+                        "endOffset": 706
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 771,
-                    "endColumn": 130,
-                    "endOffset": 897
+                    "startOffset": 609,
+                    "endColumn": 110,
+                    "endOffset": 715
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 920,
-                        "endColumn": 130,
-                        "endOffset": 1046
+                        "startColumn": 0,
+                        "startOffset": 707,
+                        "endColumn": 106,
+                        "endOffset": 813
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 902,
-                    "endColumn": 134,
-                    "endOffset": 1032
+                    "startOffset": 720,
+                    "endColumn": 209,
+                    "endOffset": 925
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 1051,
-                        "endColumn": 134,
-                        "endOffset": 1181
+                        "startColumn": 0,
+                        "startOffset": 814,
+                        "endColumn": 209,
+                        "endOffset": 1023
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 1037,
-                    "endColumn": 206,
-                    "endOffset": 1239
+                    "startOffset": 930,
+                    "endColumn": 133,
+                    "endOffset": 1059
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 1186,
-                        "endColumn": 206,
-                        "endOffset": 1388
+                        "startColumn": 0,
+                        "startOffset": 1024,
+                        "endColumn": 129,
+                        "endOffset": 1153
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 1244,
-                    "endColumn": 207,
-                    "endOffset": 1447
+                    "startOffset": 1064,
+                    "endColumn": 137,
+                    "endOffset": 1197
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
                         "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 1393,
-                        "endColumn": 207,
-                        "endOffset": 1596
+                        "startColumn": 0,
+                        "startOffset": 1154,
+                        "endColumn": 133,
+                        "endOffset": 1287
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 1452,
-                    "endColumn": 133,
-                    "endOffset": 1581
+                    "startOffset": 1202,
+                    "endColumn": 203,
+                    "endOffset": 1401
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1601,
-                        "endColumn": 133,
-                        "endOffset": 1730
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 203,
+                        "endOffset": 488
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1586,
-                    "endColumn": 171,
-                    "endOffset": 1753
+                    "startOffset": 1406,
+                    "endColumn": 220,
+                    "endOffset": 1622
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1735,
-                        "endColumn": 171,
-                        "endOffset": 1902
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1288,
+                        "endColumn": 220,
+                        "endOffset": 1508
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1758,
-                    "endColumn": 120,
-                    "endOffset": 1874
+                    "startOffset": 1627,
+                    "endColumn": 111,
+                    "endOffset": 1734
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1907,
-                        "endColumn": 120,
-                        "endOffset": 2023
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1509,
+                        "endColumn": 107,
+                        "endOffset": 1616
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1879,
-                    "endColumn": 185,
-                    "endOffset": 2060
+                    "startOffset": 1739,
+                    "endColumn": 189,
+                    "endOffset": 1924
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 2028,
-                        "endColumn": 185,
-                        "endOffset": 2209
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1617,
+                        "endColumn": 189,
+                        "endOffset": 1806
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 2065,
-                    "endColumn": 121,
-                    "endOffset": 2182
+                    "startOffset": 1929,
+                    "endColumn": 133,
+                    "endOffset": 2058
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 2214,
-                        "endColumn": 121,
-                        "endOffset": 2331
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1807,
+                        "endColumn": 129,
+                        "endOffset": 1936
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 2187,
-                    "endColumn": 137,
-                    "endOffset": 2320
+                    "startOffset": 2063,
+                    "endColumn": 204,
+                    "endOffset": 2263
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 2336,
-                        "endColumn": 137,
-                        "endOffset": 2469
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1937,
+                        "endColumn": 204,
+                        "endOffset": 2141
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 2325,
-                    "endColumn": 179,
-                    "endOffset": 2500
+                    "startOffset": 2268,
+                    "endColumn": 195,
+                    "endOffset": 2459
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 2474,
-                        "endColumn": 179,
-                        "endOffset": 2649
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 2142,
+                        "endColumn": 191,
+                        "endOffset": 2333
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 2505,
-                    "endColumn": 153,
-                    "endOffset": 2654
+                    "startOffset": 2464,
+                    "endColumn": 100,
+                    "endOffset": 2560
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 2654,
-                        "endColumn": 153,
-                        "endOffset": 2803
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 2334,
+                        "endColumn": 96,
+                        "endOffset": 2430
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 2659,
-                    "endColumn": 188,
-                    "endOffset": 2843
+                    "startOffset": 2565,
+                    "endColumn": 96,
+                    "endOffset": 2657
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 2808,
-                        "endColumn": 188,
-                        "endOffset": 2992
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 2431,
+                        "endColumn": 92,
+                        "endOffset": 2523
                     }
                 }
             },
@@ -329,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 2848,
-                    "endColumn": 140,
-                    "endOffset": 2984
+                    "startOffset": 2662,
+                    "endColumn": 110,
+                    "endOffset": 2768
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 2997,
-                        "endColumn": 140,
-                        "endOffset": 3133
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 2524,
+                        "endColumn": 106,
+                        "endOffset": 2630
                     }
                 }
             },
@@ -348,18 +348,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 2989,
-                    "endColumn": 166,
-                    "endOffset": 3151
+                    "startOffset": 2773,
+                    "endColumn": 138,
+                    "endOffset": 2907
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 3138,
-                        "endColumn": 166,
-                        "endOffset": 3300
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 305,
+                        "endColumn": 134,
+                        "endOffset": 439
                     }
                 }
             },
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 3156,
-                    "endColumn": 129,
-                    "endOffset": 3281
+                    "startOffset": 2912,
+                    "endColumn": 114,
+                    "endOffset": 3022
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 3305,
-                        "endColumn": 129,
-                        "endOffset": 3430
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 440,
+                        "endColumn": 110,
+                        "endOffset": 550
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 3286,
-                    "endColumn": 251,
-                    "endOffset": 3533
+                    "startOffset": 3027,
+                    "endColumn": 110,
+                    "endOffset": 3133
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 330,
-                        "endColumn": 251,
-                        "endOffset": 577
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 551,
+                        "endColumn": 106,
+                        "endOffset": 657
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 3538,
-                    "endColumn": 254,
-                    "endOffset": 3788
+                    "startOffset": 3138,
+                    "endColumn": 126,
+                    "endOffset": 3260
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 3435,
-                        "endColumn": 254,
-                        "endOffset": 3685
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 658,
+                        "endColumn": 122,
+                        "endOffset": 780
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 3793,
-                    "endColumn": 123,
-                    "endOffset": 3912
+                    "startOffset": 3265,
+                    "endColumn": 110,
+                    "endOffset": 3371
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 3690,
-                        "endColumn": 123,
-                        "endOffset": 3809
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 781,
+                        "endColumn": 106,
+                        "endOffset": 887
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 3917,
-                    "endColumn": 111,
-                    "endOffset": 4024
+                    "startOffset": 3376,
+                    "endColumn": 104,
+                    "endOffset": 3476
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 3814,
-                        "endColumn": 111,
-                        "endOffset": 3921
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 888,
+                        "endColumn": 100,
+                        "endOffset": 988
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 4029,
-                    "endColumn": 189,
-                    "endOffset": 4214
+                    "startOffset": 3481,
+                    "endColumn": 74,
+                    "endOffset": 3551
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 3926,
-                        "endColumn": 189,
-                        "endOffset": 4111
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 989,
+                        "endColumn": 70,
+                        "endOffset": 1059
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 4219,
-                    "endColumn": 133,
-                    "endOffset": 4348
+                    "startOffset": 3556,
+                    "endColumn": 147,
+                    "endOffset": 3699
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 4116,
-                        "endColumn": 133,
-                        "endOffset": 4245
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1060,
+                        "endColumn": 143,
+                        "endOffset": 1203
                     }
                 }
             },
@@ -500,208 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 4353,
-                    "endColumn": 204,
-                    "endOffset": 4553
+                    "startOffset": 3704,
+                    "endColumn": 95,
+                    "endOffset": 3795
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
+                    "file": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-ro\\values.xml",
                     "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 4250,
-                        "endColumn": 204,
-                        "endOffset": 4450
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 4558,
-                    "endColumn": 139,
-                    "endOffset": 4693
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 4455,
-                        "endColumn": 139,
-                        "endOffset": 4590
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 4698,
-                    "endColumn": 195,
-                    "endOffset": 4889
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 4595,
-                        "endColumn": 195,
-                        "endOffset": 4786
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 4894,
-                    "endColumn": 100,
-                    "endOffset": 4990
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 4791,
-                        "endColumn": 100,
-                        "endOffset": 4887
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 4995,
-                    "endColumn": 96,
-                    "endOffset": 5087
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 4892,
-                        "endColumn": 96,
-                        "endOffset": 4984
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 5092,
-                    "endColumn": 110,
-                    "endOffset": 5198
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 33,
-                        "startColumn": 4,
-                        "startOffset": 4989,
-                        "endColumn": 110,
-                        "endOffset": 5095
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 5203,
-                    "endColumn": 138,
-                    "endOffset": 5337
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads-lite\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 355,
-                        "endColumn": 138,
-                        "endOffset": 489
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 5342,
-                    "endColumn": 111,
-                    "endOffset": 5449
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads-lite\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 494,
-                        "endColumn": 111,
-                        "endOffset": 601
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 5454,
-                    "endColumn": 74,
-                    "endOffset": 5524
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads-lite\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 606,
-                        "endColumn": 74,
-                        "endOffset": 676
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 5529,
-                    "endColumn": 147,
-                    "endOffset": 5672
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads-lite\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 681,
-                        "endColumn": 147,
-                        "endOffset": 824
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 5677,
-                    "endColumn": 94,
-                    "endOffset": 5767
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads-lite\\9.2.1\\res\\values-ro\\values.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 829,
-                        "endColumn": 94,
-                        "endOffset": 919
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1204,
+                        "endColumn": 91,
+                        "endOffset": 1295
                     }
                 }
             }

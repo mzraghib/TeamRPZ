@@ -10,7 +10,7 @@
     <string name="instructions1">Tap to left-click</string>
     <string name="instructions2">Tap w/ two fingers to right-click</string>
     <string name="not_connected">You are not connected to a device</string>
-    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving BluetoothRemote.</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Please turn it on and try again.</string>
     <string name="title_connecting">Connecting…</string>
     <string name="title_connected_to">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
     <string name="title_not_connected">Not connected</string>
@@ -20,15 +20,13 @@
     <string name="discoverable">Make discoverable</string>
     <string name="scan_qr_code">Scan QR Code</string>
     <string name="menu_new_tab">New Tab</string>
-    <string name="menu_add_bookmark">Add Bookmark</string>
-    <string name="menu_open_bookmark">Open Bookmark…</string>
+    <string name="menu_add_bookmark">Add Shortcut</string>
+    <string name="menu_open_bookmark">Open Shortcut…</string>
 
     <!--  BookmarkListActivity -->
-    <string name="select_bookmark">Select a Bookmark</string>
-    <string name="no_boomarks">No bookmarks found</string>
-    <string name="title_bookmarks">Bookmarks</string>
+    <string name="select_bookmark">Select a Shortcut</string>
+    <string name="no_boomarks">No shortcuts found</string>
+    <string name="title_bookmarks">Shortcuts</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-2724739979625494/8532893165</string>
-
-    <!--<item name="adView" type="id">ca-app-pub-3940256099942544/6300978111</item>-->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-2724739979625494~7666655169</string>-->
 </resources>

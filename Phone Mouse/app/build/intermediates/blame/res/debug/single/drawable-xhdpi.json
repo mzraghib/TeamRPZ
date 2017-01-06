@@ -1,14 +1,14 @@
 [
     {
-        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\app_icon.png",
-        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\drawable-xhdpi\\app_icon.png"
+        "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_photo.png",
+        "source": "D:\\TeamRPZ\\Phone Mouse\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_photo.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_refresh.png",
-        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_refresh.png"
+        "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\app_icon.png",
+        "source": "D:\\TeamRPZ\\Phone Mouse\\app\\src\\main\\res\\drawable-xhdpi\\app_icon.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_photo.png",
-        "source": "D:\\AndroidStudioProjects\\Phone Mouse\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_photo.png"
+        "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_refresh.png",
+        "source": "D:\\TeamRPZ\\Phone Mouse\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_refresh.png"
     }
 ]

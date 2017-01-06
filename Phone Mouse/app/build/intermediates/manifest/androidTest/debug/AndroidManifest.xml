@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.BluetoothRemote.test">
+    package="com.prateekrishab.BluetoothRemote.test">
 
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.example.BluetoothRemote"
+                     android:targetPackage="com.prateekrishab.BluetoothRemote"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.example.BluetoothRemote"/>
+                     android:label="Tests for com.prateekrishab.BluetoothRemote"/>
 </manifest>

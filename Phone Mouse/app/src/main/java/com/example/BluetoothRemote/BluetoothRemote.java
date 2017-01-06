@@ -37,9 +37,7 @@ import com.example.RemoteCommand;
 import com.example.RemoteValues;
 import com.example.android.IntentIntegrator;
 import com.example.android.IntentResult;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -118,8 +116,8 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
     private int mState;
     private BluetoothSocket mSocket;
     private OutputStream mOutStream;
+//    private AdView mAdView;
 
-    private AdView mAdView;
 
     public static final int STATE_NONE = 0;       // we're doing nothing
     public static final int STATE_LISTEN = 1;     // now listening for incoming connections
@@ -138,22 +136,10 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 //        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
         // Set up the window layout
         setContentView(R.layout.main);
-
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-2724739979625494~7056159969");
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest request = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("3A7B116AFC6C6B578B21BE7832D8DE6A")
-                .build();
-
-        mAdView.loadAd(request );
+//        MobileAds.initialize(getApplicationContext(), "ca-app-pub-9625930711349326~2133145891");
 //        AdView adView = new AdView(this);
 //        adView.setAdSize(AdSize.SMART_BANNER);
 //        mAdView.loadAd(new AdRequest.Builder().build());
-
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
-//        MobileAds.initialize(getApplicationContext(), "ca-app-pub-2724739979625494~7056159969");
 
         tgbutton = (ToggleButton) findViewById(R.id.toggleButton);
         tgbutton.setOnClickListener(new View.OnClickListener() {
@@ -222,8 +208,8 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 
         // If the adapter is null, then Bluetooth is not supported
         if (mBluetoothAdapter == null) {
-            toast("Bluetooth is not available");
-            finish();
+            toast("Bluetooth is not available, Please turn it on and try again.");
+            //finish();
         }
 
         // Launch the qr code scanner for initial connection
@@ -332,7 +318,11 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 
 
         buffer = rcm.getByteArray();
-        mCommandService.write(buffer);
+        try{
+            mCommandService.write(buffer);}
+        catch (Exception e){
+            stopSensor();
+        }
 
 //        Log.v("X in Handle Touch",String.valueOf(rcm.parameter1));
 
@@ -571,7 +561,7 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
                     // User did not enable Bluetooth or an error occurred
                     if(D)Log.d(TAG, "BT not enabled");
                     toast(getResources().getString(R.string.bt_not_enabled_leaving).toString());
-                    finish();
+                    //finish();
                 }
                 break;
             case REQUEST_BOOKMARK:
@@ -702,7 +692,7 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
     private void addBookmark() {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
-        alert.setTitle("Enter Bookmark URL");
+        alert.setTitle("Enter Shortcut URL");
         alert.setMessage("ex: \"http://www.google.com\"");
 
         // Set an EditText view to get user input
@@ -741,10 +731,10 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
         }
         catch (Exception e) {
             success = false;
-            toast("Error saving bookmark");
+            toast("Error saving shortcut");
         }
         if(success) {
-            toast("Bookmark successfully saved");
+            toast("Shortcut successfully saved");
         }
         return success;
     }
@@ -794,10 +784,10 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
             reader.close();
             fis.close();
         } catch (Exception e) {
-            toast("Error deleting bookmark");
+            toast("Error deleting shortcut");
         }
         if(found){
-            toast("Bookmark successfully deleted");
+            toast("Shortcut successfully deleted");
         }
         return found;
     }

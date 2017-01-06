@@ -1,7 +1,7 @@
-#Mon Dec 19 20:50:03 EST 2016
-base.0=D\:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1f930d8eba81ee3a774b58692a95b8880ea756e6
+#Fri Jan 06 14:33:01 EST 2017
+base.0=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0c5cb740ef3c4452ab0996afc29e9b24f3c30eac
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=D\:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f5509ca03e0bb743d4cb563142ba3bf3d885f611\\classes.dex
-base.1=D\:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f5509ca03e0bb743d4cb563142ba3bf3d885f611
-file.0=D\:\\AndroidStudioProjects\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1f930d8eba81ee3a774b58692a95b8880ea756e6\\classes.dex
+file.1=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_daf0dd9177ae0775cc7cccdbde0a2719864dfd1a\\classes.dex
+base.1=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_daf0dd9177ae0775cc7cccdbde0a2719864dfd1a
+file.0=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0c5cb740ef3c4452ab0996afc29e9b24f3c30eac\\classes.dex
