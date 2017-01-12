@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jan 06 14:33:01 EST 2017
+#Sun Jan 08 14:11:42 EST 2017
 5.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
 42.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 32.set=ANDROID_RESOURCE
@@ -27,8 +27,8 @@
 36.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 57.set=JAVA_RESOURCE
 51.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_daf0dd9177ae0775cc7cccdbde0a2719864dfd1a\\classes.dex
-61.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml
-8.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\ic_launcher.png
+61.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+8.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png
 12.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
 8.set=ANDROID_RESOURCE
 45.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\app_icon.png
@@ -41,7 +41,7 @@
 31.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0c5cb740ef3c4452ab0996afc29e9b24f3c30eac\\classes.dex
 59.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml
 24.set=DEX
-25.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png
+25.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_text_light_focused.xml
 63.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 35.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_action_refresh.png
 13.set=ANDROID_RESOURCE
@@ -76,7 +76,7 @@
 count=69
 5.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex
 27.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
-42.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png
+42.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\common_google_signin_btn_text_light.xml
 16.set=DEX
 37.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 67.set=DEX
@@ -92,7 +92,7 @@ count=69
 22.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6\\classes.dex
 32.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\common_google_signin_btn_text_dark.xml
 34.set=ANDROID_RESOURCE
-26.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_text_light_focused.xml
+26.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png
 64.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 23.set=ANDROID_RESOURCE
 36.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_text_dark.xml
@@ -129,7 +129,7 @@ count=69
 28.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 6.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-24.0.0_f1c46504be11b7b98c06bff92af798adb9453317\\classes.dex
 10.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.google.android.gms-play-services-base-10.0.1_1ca0f6cf03625cc12205f19553acb4d804fd9ccd
-43.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\common_google_signin_btn_text_light.xml
+43.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png
 26.set=ANDROID_RESOURCE
 38.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 53.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_action_photo.png
@@ -180,9 +180,9 @@ count=69
 50.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 47.set=DEX
 19.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
-60.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+60.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml
 29.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
-7.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png
+7.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\ic_launcher.png
 11.base=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_
 44.file=D\:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png
 36.set=ANDROID_RESOURCE

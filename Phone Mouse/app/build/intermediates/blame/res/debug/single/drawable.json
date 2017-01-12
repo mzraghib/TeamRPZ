@@ -8,12 +8,12 @@
         "source": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_refresh.png",
-        "source": "D:\\TeamRPZ\\Phone Mouse\\app\\src\\main\\res\\drawable\\ic_action_refresh.png"
-    },
-    {
         "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
         "source": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_refresh.png",
+        "source": "D:\\TeamRPZ\\Phone Mouse\\app\\src\\main\\res\\drawable\\ic_action_refresh.png"
     },
     {
         "merged": "D:\\TeamRPZ\\Phone Mouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",

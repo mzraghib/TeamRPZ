@@ -116,7 +116,6 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
     private int mState;
     private BluetoothSocket mSocket;
     private OutputStream mOutStream;
-//    private AdView mAdView;
 
 
     public static final int STATE_NONE = 0;       // we're doing nothing
@@ -136,6 +135,8 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 //        SM.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
         // Set up the window layout
         setContentView(R.layout.main);
+        final TextView xText = (TextView) findViewById(R.id.tv1);
+        final TextView yText = (TextView) findViewById(R.id.tv2);
 //        MobileAds.initialize(getApplicationContext(), "ca-app-pub-9625930711349326~2133145891");
 //        AdView adView = new AdView(this);
 //        adView.setAdSize(AdSize.SMART_BANNER);
@@ -149,6 +150,8 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
                 // TODO Auto-generated method stub
                 if (tgbutton.isChecked()) {
                     stopSensor();
+                    xText.setText(R.string.instructions1);
+                    yText.setText(R.string.instructions2);
                     myLayout = (RelativeLayout) findViewById(R.id.rlayout);
                     myLayout.setOnTouchListener(new RelativeLayout.OnTouchListener() {
                         @Override
@@ -192,7 +195,8 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
                         }
                     });
                 } else {
-
+                    xText.setText(R.string.volup);
+                    yText.setText(R.string.voldwn);
                     startSensors();
                     myLayout.setOnTouchListener(null);
                 }
@@ -326,7 +330,7 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
 
 //        Log.v("X in Handle Touch",String.valueOf(rcm.parameter1));
 
-        Log.v("X in onSensorChanged",String.valueOf(X));
+//        Log.v("X in onSensorChanged",String.valueOf(X));
     }
 
     static class MeanFilterSmoothing{
@@ -642,9 +646,10 @@ public class BluetoothRemote extends Activity implements SensorEventListener{
         Intent serverIntent;
         switch (item.getItemId()) {
             case R.id.reconnect:
-                // Attempt to reconnect to previously connected device
+//                 Attempt to reconnect to previously connected device
                 if(mConnectedDeviceAddress != null &&
                         mCommandService.getState() == BluetoothCommandService.STATE_LISTEN){
+                    Log.v("in loop for reconnect",mConnectedDeviceAddress);
                     connectDevice(mConnectedDeviceAddress);
                     return true;
                 }

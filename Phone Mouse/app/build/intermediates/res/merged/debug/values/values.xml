@@ -76,6 +76,7 @@
     <string name="menu_add_bookmark">Add Shortcut</string>
     <string name="menu_new_tab">New Tab</string>
     <string name="menu_open_bookmark">Open Shortcut…</string>
+    <string name="motion">Motion</string>
     <string name="no_boomarks">No shortcuts found</string>
     <string name="not_connected">You are not connected to a device</string>
     <string name="reconnect">Reconnect</string>
@@ -83,21 +84,21 @@
     <string name="select_bookmark">Select a Shortcut</string>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
+    <string name="switch1">Switch</string>
     <string name="title_bookmarks">Shortcuts</string>
     <string name="title_connected_to">Connected to <ns1:g id="device_name">%1$s</ns1:g></string>
     <string name="title_connecting">Connecting…</string>
     <string name="title_not_connected">Not connected</string>
+    <string name="touch">Touch</string>
+    <string name="voldwn">Press Volume Down for right click</string>
+    <string name="volup">Press Volume Up for left click</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:windowNoTitle">true</item>
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
     <style name="Theme.IAPTheme" parent="android:Theme">
 <item name="android:windowIsFloating">true</item>

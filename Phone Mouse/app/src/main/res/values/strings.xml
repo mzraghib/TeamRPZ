@@ -27,6 +27,11 @@
     <string name="select_bookmark">Select a Shortcut</string>
     <string name="no_boomarks">No shortcuts found</string>
     <string name="title_bookmarks">Shortcuts</string>
+    <string name="touch">Touch</string>
+    <string name="motion">Motion</string>
+    <string name="switch1">Switch</string>
+    <string name="volup">Press Volume Up for left click</string>
+    <string name="voldwn">Press Volume Down for right click</string>
 
     <!--<string name="banner_ad_unit_id">ca-app-pub-2724739979625494~7666655169</string>-->
 </resources>

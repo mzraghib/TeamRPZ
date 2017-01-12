@@ -5,33 +5,33 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="156051049160124"
+    timestamp="7968257166056"
     token="-8322518013584829539"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="277" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="265" />
+        duration="0" />
     <task
         name="verifier"
-        duration="68" />
+        duration="0" />
 
     <artifact
         location="D:\TeamRPZ\Phone Mouse\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="156051049160124"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="19231647813641"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\TeamRPZ\Phone Mouse\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
+            location="D:\TeamRPZ\Phone Mouse\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

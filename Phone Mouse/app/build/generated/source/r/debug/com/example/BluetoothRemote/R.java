@@ -219,28 +219,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int menu_add_bookmark=0x7f05002a;
         public static final int menu_new_tab=0x7f05002b;
         public static final int menu_open_bookmark=0x7f05002c;
-        public static final int no_boomarks=0x7f05002d;
-        public static final int not_connected=0x7f05002e;
-        public static final int reconnect=0x7f05002f;
-        public static final int scan_qr_code=0x7f050030;
-        public static final int select_bookmark=0x7f050031;
+        public static final int motion=0x7f05002d;
+        public static final int no_boomarks=0x7f05002e;
+        public static final int not_connected=0x7f05002f;
+        public static final int reconnect=0x7f050030;
+        public static final int scan_qr_code=0x7f050031;
+        public static final int select_bookmark=0x7f050032;
         public static final int store_picture_message=0x7f050019;
         public static final int store_picture_title=0x7f05001a;
-        public static final int title_bookmarks=0x7f050032;
-        public static final int title_connected_to=0x7f050033;
-        public static final int title_connecting=0x7f050034;
-        public static final int title_not_connected=0x7f050035;
+        public static final int switch1=0x7f050033;
+        public static final int title_bookmarks=0x7f050034;
+        public static final int title_connected_to=0x7f050035;
+        public static final int title_connecting=0x7f050036;
+        public static final int title_not_connected=0x7f050037;
+        public static final int touch=0x7f050038;
+        public static final int voldwn=0x7f050039;
+        public static final int volup=0x7f05003a;
     }
     public static final class style {
-        /** 
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-         */
         public static final int AppBaseTheme=0x7f080000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f080001;
         public static final int Theme_IAPTheme=0x7f080002;
     }

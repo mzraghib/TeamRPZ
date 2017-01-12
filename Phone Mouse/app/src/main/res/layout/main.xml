@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/instructions1" />
+            android:text="@string/volup" />
 
     <TextView
             android:id="@+id/tv2"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/tv1"
-            android:text="@string/instructions2" />
+            android:text="@string/voldwn" />
 
     <EditText
             android:id="@+id/textBox"
@@ -56,14 +56,14 @@
             android:text="@string/delete" />
 
     <ToggleButton
-        android:text="Switch"
+        android:text="@string/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/enterButton"
         android:layout_alignParentRight="true"
         android:id="@+id/toggleButton"
-        android:textOn="Touch"
-        android:textOff="Motion"
+        android:textOn="@string/touch"
+        android:textOff="@string/motion"
         android:checked="false" />
     <!--<com.google.android.gms.ads.AdView-->
         <!--android:id="@+id/adView"-->
